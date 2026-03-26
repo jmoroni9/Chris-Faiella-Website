@@ -91,7 +91,9 @@
 
     /* ── HERO ── */
     .hero {
-      background: var(--navy);
+      background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url('Capital building photo.jpg') center center / cover no-repeat;
       min-height: 85vh;
       display: grid;
       grid-template-columns: 1fr 420px;
@@ -101,16 +103,7 @@
       overflow: hidden;
     }
     .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: repeating-linear-gradient(
-        -45deg,
-        transparent,
-        transparent 40px,
-        rgba(200,169,81,0.03) 40px,
-        rgba(200,169,81,0.03) 41px
-      );
+      content: none;
     }
     .hero-text {
       padding: 80px 60px 80px max(40px, calc(50% - 640px));
