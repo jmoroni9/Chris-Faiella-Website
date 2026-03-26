@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Chris Faiella | Missouri Personal Injury Trial Attorney</title>
+  <meta name="description" content="Chris Faiella is a Missouri trial attorney with 30+ years of experience, AV-Preeminent rated, admitted to the U.S. Supreme Court. Offices in Columbia and Moberly, MO."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --navy:     #1a2a4a;
+      --navy-mid: #22355e;
+      --gold:     #c8a951;
+      --gold2:    #e8c96a;
+      --white:    #ffffff;
+      --offwhite: #f7f5f0;
+      --gray:     #555555;
+      --light:    #eef2f8;
+      --border:   #d4c9a8;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Source Sans 3', sans-serif; color: #222; background: var(--white); line-height: 1.7; }
+
+    /* ── TOPBAR ── */
+    .topbar {
+      background: var(--navy);
+      color: #b0c4de;
+      font-size: 0.85rem;
+      padding: 8px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .topbar a { color: var(--gold); text-decoration: none; }
+    .topbar a:hover { color: var(--gold2); }
+    .topbar-firm { font-style: italic; }
+
+    /* ── NAV ── */
+    nav {
+      background: var(--white);
+      border-bottom: 3px solid var(--gold);
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--navy);
+      text-decoration: none;
+      padding: 16px 0;
+      letter-spacing: 0.5px;
+    }
+    .nav-brand span { color: var(--gold); }
+    .nav-links { display: flex; gap: 0; list-style: none; }
+    .nav-links a {
+      display: block;
+      padding: 20px 16px;
+      color: var(--navy);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      transition: color 0.2s, background 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); background: var(--offwhite); }
+    .nav-cta {
+      background: var(--gold);
+      color: var(--navy) !important;
+      padding: 10px 20px !important;
+      border-radius: 3px;
+      margin-left: 12px;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--gold2) !important; }
+
+    /* ── PAGE HERO ── */
+    .page-hero {
+      background: var(--navy);
+      padding: 80px 80px 0;
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 60px;
+      align-items: end;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(200,169,81,0.03) 40px,
+        rgba(200,169,81,0.03) 41px
+      );
+    }
+    .page-hero-text {
+      position: relative;
+      z-index: 2;
+      padding-bottom: 60px;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+    .page-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 4vw, 3.6rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.12;
+      margin-bottom: 24px;
+    }
+    .page-hero h1 em {
+      font-style: normal;
+      color: var(--gold);
+    }
+    .page-hero-intro {
+      font-size: 1.1rem;
+      color: #b8cce0;
+      max-width: 580px;
+      line-height: 1.8;
+      font-weight: 300;
+      margin-bottom: 36px;
+    }
+    .credential-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+    .cred-badge {
+      background: rgba(200,169,81,0.15);
+      border: 1px solid rgba(200,169,81,0.3);
+      color: var(--gold);
+      padding: 6px 16px;
+      border-radius: 2px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .page-hero-photo {
+      position: relative;
+      z-index: 2;
+      align-self: end;
+    }
+    .page-hero-photo img {
+      display: block;
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      object-fit: cover;
+      filter: grayscale(20%);
+    }
+    .photo-placeholder {
+      width: 100%;
+      max-width: 320px;
+      height: 420px;
+      background: linear-gradient(160deg, #22355e 0%, #1a2a4a 100%);
+      border: 2px dashed rgba(200,169,81,0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(200,169,81,0.5);
+      font-size: 0.8rem;
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      gap: 12px;
+    }
+    .photo-placeholder-icon {
+      font-size: 2.5rem;
+      opacity: 0.4;
+    }
+
+    /* ── BREADCRUMB ── */
+    .breadcrumb {
+      background: var(--offwhite);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 80px;
+      font-size: 0.82rem;
+      color: #888;
+    }
+    .breadcrumb a { color: var(--navy); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--gold); }
+    .breadcrumb span { margin: 0 8px; color: #bbb; }
+
+    /* ── SECTION LAYOUT ── */
+    .section { padding: 80px; }
+    .section-alt { background: var(--offwhite); }
+    .section-navy { background: var(--navy); color: white; }
+    .section-label {
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .section-navy .section-title { color: white; }
+    .section-intro {
+      font-size: 1.05rem;
+      color: #555;
+      max-width: 660px;
+      line-height: 1.8;
+      margin-bottom: 48px;
+    }
+    .section-navy .section-intro { color: #b8cce0; }
+
+    /* ── TWO-COLUMN BIO ── */
+    .bio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .bio-text p {
+      color: #444;
+      line-height: 1.85;
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+    .bio-text p:last-child { margin-bottom: 0; }
+    .bio-sidebar {}
+    .sidebar-card {
+      background: var(--navy);
+      color: white;
+      padding: 32px;
+      margin-bottom: 28px;
+      border-left: 4px solid var(--gold);
+    }
+    .sidebar-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--gold);
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+    .sidebar-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar-card ul li {
+      font-size: 0.9rem;
+      color: #b8cce0;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .sidebar-card ul li:last-child { border-bottom: none; }
+    .sidebar-card ul li::before {
+      content: '▸';
+      color: var(--gold);
+      flex-shrink: 0;
+      margin-top: 1px;
+      font-size: 0.75rem;
+    }
+    .sidebar-card .stat-row {
+      display: flex;
+      gap: 24px;
+      margin-top: 8px;
+    }
+    .sidebar-stat .num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .sidebar-stat .lbl {
+      font-size: 0.75rem;
+      color: #7a9ab8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+
+    /* ── PHILOSOPHY SECTION ── */
+    .philosophy-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .philosophy-card {
+      background: white;
+      padding: 36px 32px;
+      border-top: 4px solid var(--gold);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .philosophy-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,0.1); }
+    .philosophy-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 900;
+      color: rgba(200,169,81,0.2);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .philosophy-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--navy);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .philosophy-card p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.75;
+    }
+
+    /* ── TIMELINE / CAREER ── */
+    .timeline {
+      position: relative;
+      padding-left: 32px;
+      margin-top: 20px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--gold), rgba(200,169,81,0.1));
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 36px;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -38px;
+      top: 8px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--gold);
+      border: 2px solid white;
+      box-shadow: 0 0 0 3px rgba(200,169,81,0.2);
+    }
+    .timeline-year {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+    .timeline-item h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--navy);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .timeline-item p {
+      font-size: 0.93rem;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    /* ── ADMISSIONS / CREDENTIALS GRID ── */
+    .creds-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .creds-block {
+      background: white;
+      padding: 32px;
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--gold);
+    }
+    .creds-block h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--navy);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .creds-block ul { list-style: none; padding: 0; }
+    .creds-block ul li {
+      font-size: 0.92rem;
+      color: #444;
+      padding: 7px 0;
+      border-bottom: 1px solid #f0ece0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .creds-block ul li:last-child { border-bottom: none; }
+    .creds-block ul li .year {
+      font-size: 0.78rem;
+      color: #999;
+      white-space: nowrap;
+    }
+
+    /* ── PUBLICATIONS ── */
+    .pubs-list { margin-top: 24px; }
+    .pub-item {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 20px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+    .pub-item:first-child { border-top: 1px solid var(--border); }
+    .pub-year {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1.2;
+    }
+    .pub-title {
+      font-size: 0.97rem;
+      color: var(--navy);
+      font-weight: 600;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .pub-venue {
+      font-size: 0.85rem;
+      color: #777;
+      font-style: italic;
+    }
+
+    /* ── COMMUNITY ── */
+    .community-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 48px;
+    }
+    .community-card {
+      padding: 28px;
+      border: 1px solid var(--border);
+      background: white;
+    }
+    .community-icon {
+      font-size: 1.8rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+    .community-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--navy);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .community-card p {
+      font-size: 0.88rem;
+      color: #666;
+      line-height: 1.65;
+    }
+
+    /* ── PULL QUOTE ── */
+    .pull-quote {
+      background: var(--navy);
+      padding: 60px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .pull-quote::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 18rem;
+      color: rgba(200,169,81,0.06);
+      position: absolute;
+      top: -40px;
+      left: 40px;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .pull-quote blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+      font-weight: 400;
+      font-style: italic;
+      color: white;
+      max-width: 820px;
+      margin: 0 auto 20px;
+      line-height: 1.55;
+      position: relative;
+      z-index: 2;
+    }
+    .pull-quote cite {
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    /* ── CTA STRIP ── */
+    .cta-strip {
+      background: var(--gold);
+      padding: 48px 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .cta-strip h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--navy);
+      font-weight: 700;
+    }
+    .cta-strip p { color: rgba(26,42,74,0.75); font-size: 1rem; margin-top: 6px; }
+    .cta-strip-actions { display: flex; gap: 16px; flex-wrap: wrap; flex-shrink: 0; }
+    .btn-navy {
+      background: var(--navy);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 3px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+    .btn-navy:hover { background: var(--navy-mid); }
+    .btn-outline-navy {
+      border: 2px solid var(--navy);
+      color: var(--navy);
+      padding: 12px 24px;
+      border-radius: 3px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+    .btn-outline-navy:hover { background: rgba(26,42,74,0.1); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #0f1c30;
+      padding: 32px 80px;
+      color: #7a9ab8;
+      font-size: 0.85rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+    footer a:hover { color: var(--gold2); }
+    .footer-disclaimer {
+      background: #080f1c;
+      padding: 20px 80px;
+      color: #3d5470;
+      font-size: 0.75rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1000px) {
+      .page-hero { grid-template-columns: 1fr; padding: 60px 40px 0; }
+      .page-hero-photo { display: none; }
+      .bio-grid, .creds-grid { grid-template-columns: 1fr; }
+      .philosophy-grid, .community-grid { grid-template-columns: 1fr 1fr; }
+      .section { padding: 60px 40px; }
+      .pull-quote, .cta-strip { padding: 48px 40px; }
+      footer { grid-template-columns: 1fr; text-align: center; padding: 32px 40px; }
+      .footer-disclaimer { padding: 20px 40px; }
+      .breadcrumb { padding: 12px 40px; }
+    }
+    @media (max-width: 640px) {
+      .topbar { padding: 8px 20px; flex-direction: column; gap: 4px; }
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .philosophy-grid, .community-grid { grid-template-columns: 1fr; }
+      .section { padding: 48px 24px; }
+      .pull-quote, .cta-strip { padding: 40px 24px; }
+      footer { padding: 28px 24px; }
+      .footer-disclaimer { padding: 16px 24px; }
+      .breadcrumb { padding: 10px 24px; }
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .animate { opacity: 0; }
+    .animate.visible { animation: fadeUp 0.6s ease forwards; }
+    .animate:nth-child(2) { animation-delay: 0.1s; }
+    .animate:nth-child(3) { animation-delay: 0.2s; }
+    .animate:nth-child(4) { animation-delay: 0.3s; }
+  </style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <span class="topbar-firm">Member, <a href="https://www.centralmolaw.com" target="_blank">Gump, Faiella &amp; Bugalski, LLC</a> &nbsp;|&nbsp; Columbia &amp; Moberly, Missouri</span>
+  <div>
+    <a href="tel:18002643455">Toll Free: 1-800-264-3455</a> &nbsp;&nbsp;
+    <a href="tel:16606633100">Moberly: (660) 263-3100</a> &nbsp;&nbsp;
+    <a href="tel:15738182646">Columbia: (573) 818-2646</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-brand">Chris <span>Faiella</span></a>
+  <ul class="nav-links">
+    <li><a href="about-bio.html" class="active">About</a></li>
+    <li><a href="index.html#practice">Practice Areas</a></li>
+    <li><a href="index.html#results">Results</a></li>
+    <li><a href="index.html#media">Publications</a></li>
+    <li><a href="index.html#news">News</a></li>
+    <li><a href="index.html#attorneys">Attorneys ▸</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Free Consultation</a></li>
+  </ul>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span>›</span>
+  About Chris Faiella
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-text">
+    <div class="eyebrow">Missouri Trial Attorney — 30+ Years</div>
+    <h1>Christian J. Faiella<br/><em>Fighting for the Seriously Injured</em></h1>
+    <p class="page-hero-intro">
+      When a catastrophic accident upends a family's life, the stakes are too high for anything less than total commitment. For more than three decades, Chris Faiella has taken on large corporations and insurance companies — and won — on behalf of the people who needed it most.
+    </p>
+    <div class="credential-row">
+      <span class="cred-badge">AV-Preeminent® Rated</span>
+      <span class="cred-badge">U.S. Supreme Court</span>
+      <span class="cred-badge">8th &amp; 10th Circuits</span>
+      <span class="cred-badge">$300M+ Recovered</span>
+      <span class="cred-badge">MO Bar • 1995</span>
+    </div>
+  </div>
+  <div class="page-hero-photo">
+    <div class="photo-placeholder">
+      <span class="photo-placeholder-icon">👤</span>
+      <span>Photo of<br/>Chris Faiella</span>
+    </div>
+  </div>
+</div>
+
+<!-- BIO SECTION -->
+<section class="section" id="bio">
+  <div class="section-label">Background &amp; Experience</div>
+  <div class="bio-grid">
+    <div class="bio-text">
+      <div class="section-title" style="margin-bottom:32px;">A Trial Lawyer Who Walks the Scene, Knows the Family, Masters the Law</div>
+      <p>
+        Christian J. Faiella has spent his career doing one thing: giving a credible, compelling voice to people catastrophically injured by the negligence or recklessness of others. As a member of <a href="https://www.centralmolaw.com" target="_blank" style="color:var(--navy);font-weight:600;">Gump, Faiella &amp; Bugalski, LLC</a>, he brings the resources and depth of a full-service firm combined with the focused intensity of a trial lawyer who personally prepares each case.
+      </p>
+      <p>
+        Other attorneys refer their most difficult, high-stakes cases to Chris because of his reputation for zealous advocacy, innovative legal preparation, and exhaustive factual investigation. His approach is direct: walk the accident scene, get to know the family, understand the medicine, master the law — then stand in front of a jury and tell the truth with authority.
+      </p>
+      <p>
+        That approach has produced multi-million dollar jury verdicts and settlements against some of the largest corporations and insurance companies in the country — including high-profile victories where other firms turned the cases away.
+      </p>
+      <p>
+        Licensed in Missouri since 1995, Chris is also admitted to practice before the United States Supreme Court, the U.S. Courts of Appeals for the Eighth and Tenth Circuits, and the Eastern and Western Districts of Missouri's federal courts. The <em>Martindale-Hubbell Law Directory</em> has awarded him its AV-Preeminent® rating — the highest peer-review rating given — reflecting both his legal ability and his professional standards.
+      </p>
+      <p>
+        Beyond the courtroom, Chris is a published author and frequent CLE presenter on personal injury, insurance bad faith, and trial practice — contributing to Missouri Bar publications and national practitioner texts used by attorneys across the country.
+      </p>
+    </div>
+    <div class="bio-sidebar">
+      <div class="sidebar-card">
+        <h3>Career at a Glance</h3>
+        <div class="stat-row" style="margin-bottom:24px;">
+          <div class="sidebar-stat">
+            <div class="num">30+</div>
+            <div class="lbl">Years in Practice</div>
+          </div>
+          <div class="sidebar-stat">
+            <div class="num">$300M+</div>
+            <div class="lbl">Recovered for Clients</div>
+          </div>
+        </div>
+        <ul>
+          <li>AV-Preeminent® Rating — Martindale-Hubbell</li>
+          <li>Admitted: U.S. Supreme Court (2008)</li>
+          <li>Admitted: 8th &amp; 10th Circuit Courts of Appeals</li>
+          <li>Licensed: Missouri &amp; Kansas</li>
+          <li>J.D., University of Missouri (1995)</li>
+          <li>B.A., State University of New York (1989)</li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h3>Primary Practice Focus</h3>
+        <ul>
+          <li>Catastrophic Personal Injury</li>
+          <li>Traumatic Brain Injury</li>
+          <li>Trucking &amp; Commercial Vehicle Accidents</li>
+          <li>Wrongful Death</li>
+          <li>Insurance Bad Faith</li>
+          <li>Products Liability</li>
+          <li>Boating, Drowning &amp; Recreational Injury</li>
+          <li>Sports &amp; Youth Activity Injuries</li>
+          <li>Negligent Security</li>
+          <li>Medical Malpractice</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PULL QUOTE -->
+<div class="pull-quote">
+  <blockquote>
+    "Jurors justly reward my clients because I've walked the accident scene, know the family, learned the medical procedures, mastered the law — and can give a credible voice to their pain and loss."
+  </blockquote>
+  <cite>— Christian J. Faiella</cite>
+</div>
+
+<!-- PHILOSOPHY -->
+<section class="section section-alt" id="philosophy">
+  <div class="section-label">How I Approach Every Case</div>
+  <div class="section-title">A Lawyer's Philosophy</div>
+  <p class="section-intro">
+    Winning serious injury cases requires more than legal knowledge. It requires a commitment to understanding every dimension of the client's experience — and the preparation to prove it.
+  </p>
+  <div class="philosophy-grid">
+    <div class="philosophy-card animate">
+      <div class="philosophy-number">01</div>
+      <h3>Total Case Preparation</h3>
+      <p>Every case I take is prepared as if it will go to trial. That means walking the accident scene, understanding the physics, studying the medicine, and knowing the applicable law better than the other side. Preparation is not just the work before trial — it is the trial itself.</p>
+    </div>
+    <div class="philosophy-card animate">
+      <div class="philosophy-number">02</div>
+      <h3>Know Your Client's Story</h3>
+      <p>Jurors don't award justice to a case number. They respond to a human being whose story is told with honesty and clarity. I invest the time to understand who my client is — their family, their work, their life before and after the injury — and I make sure the jury understands it too.</p>
+    </div>
+    <div class="philosophy-card animate">
+      <div class="philosophy-number">03</div>
+      <h3>Never Back Down from Insurance</h3>
+      <p>Insurance companies count on claimants accepting less than they deserve. I have litigated insurance bad faith cases my entire career, and I know how they operate. When an insurer wrongfully denies a legitimate claim, that refusal can become the basis for additional recovery under Missouri law.</p>
+    </div>
+    <div class="philosophy-card animate">
+      <div class="philosophy-number">04</div>
+      <h3>Master the Expert Witnesses</h3>
+      <p>In catastrophic injury cases, the battle is often fought through experts — doctors, engineers, accident reconstructionists, economists. I have spent decades learning how to select, prepare, and examine experts effectively, and how to expose the weaknesses in the opposition's.</p>
+    </div>
+    <div class="philosophy-card animate">
+      <div class="philosophy-number">05</div>
+      <h3>Federal Court Capability</h3>
+      <p>Many Missouri plaintiffs' lawyers are limited to state court. My admission to both federal districts, the Eighth and Tenth Circuits, and the U.S. Supreme Court means I can follow a case wherever it needs to go — an important asset in complex multi-party and interstate cases.</p>
+    </div>
+    <div class="philosophy-card animate">
+      <div class="philosophy-number">06</div>
+      <h3>No Fee Unless We Win</h3>
+      <p>Serious injury cases are handled on a contingency fee basis. There is no upfront cost to you. I bear the expense of litigation and get paid only when I recover money for you. The free initial consultation is just that — free, with no obligation and no pressure.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER TIMELINE -->
+<section class="section" id="career">
+  <div class="section-label">Career &amp; Education</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;">
+    <div>
+      <div class="section-title" style="margin-bottom:32px;">Education &amp; Formative Years</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">1985 – 1989</div>
+          <h3>State University of New York</h3>
+          <p>Bachelor of Arts, Political Science. Awarded the Feinburg Scholarship for Academic Excellence in Political Science; Research Fellow in the Political Science Department; earned a President's Letter Certificate; served as an intern in the New York State Assembly.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">1989</div>
+          <h3>New York Assembly Intern</h3>
+          <p>Selected for the competitive New York Assembly Intern Program, serving Representative William R. Sears — an early exposure to the legislative and public policy dimensions of law.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">1992 – 1995</div>
+          <h3>University of Missouri School of Law</h3>
+          <p>Juris Doctor, 1995. Earned the American Jurisprudence Award in Torts (1992) and the American Jurisprudence Award in Federal Courts (1995). Served as a legal research clerk to Professor Robert Lawless.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">1995</div>
+          <h3>Missouri Bar Admission</h3>
+          <p>Licensed to practice in Missouri and admitted to the U.S. District Courts for the Eastern and Western Districts of Missouri. Joined Gump &amp; Faiella (now Gump, Faiella &amp; Bugalski) shortly thereafter.</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="section-title" style="margin-bottom:32px;">Professional Milestones</div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">1999</div>
+          <h3>Certified Advocate — American Trial Lawyers Association</h3>
+          <p>Earned certification as an Advocate, recognizing demonstrated trial experience and commitment to plaintiff-side litigation.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">1999 – 2000</div>
+          <h3>President — Randolph County Bar Association</h3>
+          <p>Served as president of the local bar association, building relationships with judges, opposing counsel, and fellow attorneys across Central Missouri.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2008</div>
+          <h3>Admitted — United States Supreme Court</h3>
+          <p>Admitted to the bar of the Supreme Court of the United States, expanding appellate capability to the nation's highest court.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2014</div>
+          <h3>Admitted — U.S. Tenth Circuit &amp; Kansas Bar</h3>
+          <p>Expanded federal court admissions to include the Tenth Circuit Court of Appeals and the Kansas state bar, broadening the geographic reach of representation available to clients.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Ongoing</div>
+          <h3>AV-Preeminent® Rated — Martindale-Hubbell</h3>
+          <p>Has held the AV-Preeminent rating — the highest peer-review designation issued by the Martindale-Hubbell Law Directory — reflecting both legal ability and adherence to professional standards as judged by fellow attorneys and judges.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BAR ADMISSIONS & CREDENTIALS -->
+<section class="section section-alt" id="credentials">
+  <div class="section-label">Admissions &amp; Honors</div>
+  <div class="section-title">Credentials</div>
+  <div class="creds-grid">
+    <div class="creds-block">
+      <h3>Bar Admissions</h3>
+      <ul>
+        <li>Missouri Bar <span class="year">1995 – Present</span></li>
+        <li>Kansas Bar <span class="year">2014 – Present</span></li>
+        <li>U.S. District Court — Western District of Missouri <span class="year">1995</span></li>
+        <li>U.S. District Court — Eastern District of Missouri <span class="year">1995</span></li>
+        <li>U.S. Eighth Circuit Court of Appeals <span class="year">1995</span></li>
+        <li>U.S. Tenth Circuit Court of Appeals <span class="year">2014</span></li>
+        <li>Supreme Court of the United States <span class="year">2008</span></li>
+      </ul>
+    </div>
+    <div class="creds-block">
+      <h3>Honors &amp; Academic Awards</h3>
+      <ul>
+        <li>AV-Preeminent® Rating, Martindale-Hubbell</li>
+        <li>American Jurisprudence Award in Torts <span class="year">1992</span></li>
+        <li>American Jurisprudence Award in Federal Courts <span class="year">1995</span></li>
+        <li>Certified Advocate, American Trial Lawyers Association <span class="year">1999</span></li>
+        <li>Article of the Year — Missouri Lawyers Weekly <span class="year">1999</span></li>
+        <li>Feinburg Scholarship for Academic Excellence in Political Science <span class="year">1988</span></li>
+        <li>Research Fellow, Political Science — SUNY <span class="year">1988–89</span></li>
+      </ul>
+    </div>
+    <div class="creds-block">
+      <h3>Bar Association &amp; Professional Memberships</h3>
+      <ul>
+        <li>Missouri Bar — Member <span class="year">1995–Present</span></li>
+        <li>Bar Association of Metropolitan St. Louis <span class="year">2014–Present</span></li>
+        <li>Randolph County Bar Association <span class="year">1995–Present</span></li>
+        <li>Missouri Bar Tort Law Committee <span class="year">1997–Present</span></li>
+        <li>Missouri Bar Civil Practice &amp; Procedure Committee <span class="year">1997–Present</span></li>
+        <li>Missouri Bar Insurance Law Committee <span class="year">2003–Present</span></li>
+        <li>Missouri Bar Solo &amp; Small Firm Practice Committee <span class="year">2003–Present</span></li>
+        <li>Missouri Bar Leadership Academy <span class="year">2001–2002</span></li>
+      </ul>
+    </div>
+    <div class="creds-block">
+      <h3>Leadership Roles</h3>
+      <ul>
+        <li>President — Randolph County Bar Association <span class="year">1999–2000</span></li>
+        <li>Board of Directors — Randolph County Chamber of Commerce <span class="year">2000–2002</span></li>
+        <li>Treasurer — Randolph County Chamber of Commerce <span class="year">2001</span></li>
+        <li>Missouri Bar Tort Law Committee — Vice Chair <span class="year">2003–2005</span></li>
+        <li>Rotary Vice-President, Columbia Rotary Club <span class="year">2000–2001</span></li>
+        <li>Legal Counsel — YMCA Board of Directors <span class="year">2002–2003</span></li>
+        <li>Missouri Bar Leadership Academy <span class="year">2001–2002</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTED PUBLICATIONS -->
+<section class="section" id="publications">
+  <div class="section-label">Scholarship &amp; Writing</div>
+  <div class="section-title">Selected Publications</div>
+  <p class="section-intro">
+    Chris Faiella has contributed to legal scholarship and continuing education throughout his career, authoring chapters for Missouri Bar CLE publications and national practitioner texts on personal injury, bad faith insurance litigation, and trial practice.
+  </p>
+  <div class="pubs-list">
+    <div class="pub-item animate">
+      <div class="pub-year">2014</div>
+      <div>
+        <div class="pub-title">Personal Injury Settlement Agreements Line by Line: A Detailed Look at Personal Injury Settlement Agreements and How to Change Them to Meet Your Clients' Needs</div>
+        <div class="pub-venue">Thomson Reuters / Aspatore — Chapter Author</div>
+      </div>
+    </div>
+    <div class="pub-item animate">
+      <div class="pub-year">2011</div>
+      <div>
+        <div class="pub-title">Knowing Your Client and Your Case: The Foundation of a Successful Case Strategy for Personal Injury Lawyers</div>
+        <div class="pub-venue">Thomson Reuters / Aspatore — Chapter Author</div>
+      </div>
+    </div>
+    <div class="pub-item animate">
+      <div class="pub-year">2010</div>
+      <div>
+        <div class="pub-title">Chapter 13: Insurance Law — Bad Faith</div>
+        <div class="pub-venue">Missouri Bar CLE Publications</div>
+      </div>
+    </div>
+    <div class="pub-item animate">
+      <div class="pub-year">2009</div>
+      <div>
+        <div class="pub-title">Chapter 3: Litigation Settlements — Mary Carter Agreements (Supplement)</div>
+        <div class="pub-venue">Missouri Bar CLE Publications</div>
+      </div>
+    </div>
+    <div class="pub-item animate">
+      <div class="pub-year">2008</div>
+      <div>
+        <div class="pub-title">Chapter 4: Civil Trial Practice — Pleadings (Supplement)</div>
+        <div class="pub-venue">Missouri Bar CLE Publications</div>
+      </div>
+    </div>
+    <div class="pub-item animate">
+      <div class="pub-year">2006</div>
+      <div>
+        <div class="pub-title">Chapter 8: Evidence, 5th Edition — Competency of Witnesses</div>
+        <div class="pub-venue">Missouri Bar CLE Publications</div>
+      </div>
+    </div>
+    <div class="pub-item animate">
+      <div class="pub-year">2006</div>
+      <div>
+        <div class="pub-title">Chapter 13: Automobile Torts — Tort Law 2003 (2006 Update)</div>
+        <div class="pub-venue">Missouri Bar CLE Publications</div>
+      </div>
+    </div>
+    <div class="pub-item animate">
+      <div class="pub-year">2003</div>
+      <div>
+        <div class="pub-title">Proving Damages in Mild Brain Injury Cases — A Thumbnail Sketch</div>
+        <div class="pub-venue">The Missouri Trial Attorney, Vol. XXI, No. 3 (Fall 2003)</div>
+      </div>
+    </div>
+    <div class="pub-item animate">
+      <div class="pub-year">1999</div>
+      <div>
+        <div class="pub-title">The Effective Use of a Claim Based Upon "Negligence Per Se"</div>
+        <div class="pub-venue">The Missouri Trial Attorney, Vol. XVII, No. 1 (Spring 1999) — co-authored with Mark J. Evans</div>
+      </div>
+    </div>
+    <div class="pub-item animate">
+      <div class="pub-year">1999</div>
+      <div>
+        <div class="pub-title">Article of the Year — "Partial Settlement in Multi-Party Injury Cases"</div>
+        <div class="pub-venue">Missouri Lawyers Weekly — recognized by the editorial board as Article of the Year (1999)</div>
+      </div>
+    </div>
+    <div class="pub-item animate">
+      <div class="pub-year">1995</div>
+      <div>
+        <div class="pub-title">Hunters, Landowners &amp; The Law</div>
+        <div class="pub-venue">Rural Missourian, Fall 1995</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section class="section section-alt" id="community">
+  <div class="section-label">Roots in Central Missouri</div>
+  <div class="section-title">Community &amp; Pro Bono</div>
+  <p class="section-intro">
+    Chris Faiella's practice has always been grounded in Central Missouri. His community involvement reflects a commitment that extends beyond the courtroom.
+  </p>
+  <div class="community-grid">
+    <div class="community-card animate">
+      <span class="community-icon">⚖️</span>
+      <h3>NoMo Community Foundation</h3>
+      <p>Former President of the NoMo Community Foundation, supporting civic and charitable initiatives across North Missouri.</p>
+    </div>
+    <div class="community-card animate">
+      <span class="community-icon">✝️</span>
+      <h3>St. Pius X School Foundation</h3>
+      <p>Former Board Member and volunteer for St. Pius X School Foundation in Moberly, supporting Catholic education in the community.</p>
+    </div>
+    <div class="community-card animate">
+      <span class="community-icon">🎾</span>
+      <h3>Volunteer Tennis Coach</h3>
+      <p>Volunteered as a tennis coach at Moberly High School, giving back to student athletes in his community.</p>
+    </div>
+    <div class="community-card animate">
+      <span class="community-icon">🤝</span>
+      <h3>Randolph County YMCA</h3>
+      <p>Served as a board member and legal counsel for the Randolph County YMCA, supporting youth programming and community fitness.</p>
+    </div>
+    <div class="community-card animate">
+      <span class="community-icon">🔄</span>
+      <h3>Rotary International</h3>
+      <p>Member of the Columbia Rotary Club from 1999 to 2008, serving as Vice-President and Social Co-Chair. Rotary's mission of service above self aligns with Chris's approach to his practice and his community.</p>
+    </div>
+    <div class="community-card animate">
+      <span class="community-icon">🏛️</span>
+      <h3>Bar Leadership &amp; Public Service</h3>
+      <p>Past President of the Randolph County Bar Association, past Treasurer and Director of the Randolph County Chamber of Commerce, and graduate of the Missouri Bar Leadership Academy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip">
+  <div>
+    <h2>Ready to Talk About Your Case?</h2>
+    <p>Personal injury consultations are always free. No fee unless we win.</p>
+  </div>
+  <div class="cta-strip-actions">
+    <a href="index.html#contact" class="btn-navy">Free Case Consultation</a>
+    <a href="tel:18002643455" class="btn-outline-navy">Call 1-800-264-3455</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <strong style="color:white;font-family:'Playfair Display',serif;font-size:1.1rem;">Chris Faiella</strong><br/>
+    Member, Gump, Faiella &amp; Bugalski, LLC &nbsp;|&nbsp; <a href="https://www.centralmolaw.com">centralmolaw.com</a>
+  </div>
+  <div style="text-align:center;">
+    <a href="tel:18002643455">1-800-264-3455</a> &nbsp;|&nbsp;
+    <a href="index.html#contact">Free Consultation</a> &nbsp;|&nbsp;
+    <a href="index.html#practice">Practice Areas</a> &nbsp;|&nbsp;
+    <a href="index.html#results">Results</a>
+  </div>
+  <div style="text-align:right;">
+    Columbia &amp; Moberly, Missouri<br/>
+    © 2026 Chris Faiella. All Rights Reserved.
+  </div>
+</footer>
+<div class="footer-disclaimer">
+  The choice of a lawyer is an important decision and should not be based solely upon advertisements. Past results do not guarantee similar outcomes in future cases. The information on this website is for general informational purposes only and does not constitute legal advice. Visiting this site does not create an attorney-client relationship. Chris Faiella practices as a member of Gump, Faiella &amp; Bugalski, LLC, licensed in Missouri and before the U.S. Supreme Court, U.S. Courts of Appeals for the Eighth and Tenth Circuits, and the U.S. District Courts for the Eastern and Western Districts of Missouri.
+</div>
+
+<script>
+  // Scroll-triggered fade-up animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

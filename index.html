@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chris Faiella | Missouri Personal Injury Attorney | faiellalaw.com</title>
+  <meta name="description" content="Chris Faiella is a Missouri personal injury attorney with over $300 million recovered for injured clients. Car accidents, truck accidents, brain injury, wrongful death, insurance bad faith. Offices in Columbia and Moberly, MO."/>
+  <meta name="keywords" content="Chris Faiella attorney, Missouri personal injury lawyer, car accident attorney Columbia MO, truck accident lawyer Missouri, brain injury attorney, wrongful death lawyer Missouri, insurance bad faith attorney, faiellalaw.com"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+  <!-- Google Analytics placeholder — replace GA_MEASUREMENT_ID with your ID -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> -->
+
+  <style>
+    :root {
+      --navy:   #1a2a4a;
+      --gold:   #c8a951;
+      --gold2:  #e8c96a;
+      --white:  #ffffff;
+      --offwhite: #f7f5f0;
+      --gray:   #555555;
+      --light:  #eef2f8;
+      --border: #d4c9a8;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Source Sans 3', sans-serif; color: #222; background: var(--white); line-height: 1.7; }
+
+    /* ── TOPBAR ── */
+    .topbar {
+      background: var(--navy);
+      color: #b0c4de;
+      font-size: 0.85rem;
+      padding: 8px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .topbar a { color: var(--gold); text-decoration: none; }
+    .topbar a:hover { color: var(--gold2); }
+    .topbar-firm { font-style: italic; }
+
+    /* ── NAV ── */
+    nav {
+      background: var(--white);
+      border-bottom: 3px solid var(--gold);
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--navy);
+      text-decoration: none;
+      padding: 16px 0;
+      letter-spacing: 0.5px;
+    }
+    .nav-brand span { color: var(--gold); }
+    .nav-links { display: flex; gap: 0; list-style: none; }
+    .nav-links a {
+      display: block;
+      padding: 20px 16px;
+      color: var(--navy);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      transition: color 0.2s, background 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); background: var(--offwhite); }
+    .nav-cta {
+      background: var(--gold);
+      color: var(--navy) !important;
+      padding: 10px 20px !important;
+      border-radius: 3px;
+      margin-left: 12px;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--gold2) !important; }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--navy);
+      min-height: 85vh;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      align-items: center;
+      gap: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(200,169,81,0.03) 40px,
+        rgba(200,169,81,0.03) 41px
+      );
+    }
+    .hero-text {
+      padding: 80px 60px 80px 80px;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 4vw, 3.8rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--gold);
+      display: block;
+    }
+    .hero-sub {
+      font-size: 1.15rem;
+      color: #b8cce0;
+      max-width: 520px;
+      margin-bottom: 36px;
+      font-weight: 300;
+      line-height: 1.75;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 44px;
+      flex-wrap: wrap;
+    }
+    .hero-stat .num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .hero-stat .lbl {
+      font-size: 0.8rem;
+      color: #7a9ab8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy);
+      padding: 16px 32px;
+      border-radius: 3px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      transition: background 0.2s, transform 0.1s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--gold2); transform: translateY(-1px); }
+    .btn-secondary {
+      border: 2px solid rgba(255,255,255,0.4);
+      color: var(--white);
+      padding: 14px 28px;
+      border-radius: 3px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s;
+      display: inline-block;
+    }
+    .btn-secondary:hover { border-color: var(--gold); background: rgba(200,169,81,0.1); }
+    .hero-photo {
+      height: 100%;
+      min-height: 85vh;
+      position: relative;
+    }
+    .hero-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+    .hero-photo-placeholder {
+      width: 100%;
+      height: 100%;
+      min-height: 85vh;
+      background: linear-gradient(160deg, #243a5e 0%, #1a2a4a 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.15);
+      font-size: 0.9rem;
+      text-align: center;
+      gap: 16px;
+      padding: 40px;
+    }
+    .hero-photo-placeholder svg { opacity: 0.2; }
+
+    /* ── TRUST BAR ── */
+    .trust-bar {
+      background: var(--gold);
+      padding: 20px 80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .trust-item {
+      text-align: center;
+      color: var(--navy);
+    }
+    .trust-item strong { font-size: 1.1rem; font-weight: 700; display: block; }
+    .trust-item span { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.5px; }
+
+    /* ── SECTION BASE ── */
+    section { padding: 80px 80px; }
+    .section-label {
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .section-intro {
+      font-size: 1.1rem;
+      color: var(--gray);
+      max-width: 680px;
+      line-height: 1.8;
+      margin-bottom: 48px;
+    }
+
+    /* ── WHO I HELP ── */
+    .who-section { background: var(--offwhite); }
+    .who-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .who-card {
+      background: var(--white);
+      border-top: 4px solid var(--gold);
+      padding: 36px 32px;
+      border-radius: 2px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    }
+    .who-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+    .who-card p { font-size: 0.95rem; color: var(--gray); line-height: 1.75; }
+
+    /* ── PRACTICE AREAS ── */
+    .practice-section { background: var(--white); }
+    .practice-intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+      margin-bottom: 60px;
+    }
+    .practice-areas-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      background: var(--light);
+    }
+    .pa-item {
+      background: var(--white);
+      padding: 28px 24px;
+      text-decoration: none;
+      transition: background 0.2s;
+      border-left: 3px solid transparent;
+    }
+    .pa-item:hover { background: var(--offwhite); border-left-color: var(--gold); }
+    .pa-item .pa-icon { font-size: 1.6rem; margin-bottom: 10px; }
+    .pa-item h4 { font-size: 1rem; color: var(--navy); font-weight: 700; margin-bottom: 6px; }
+    .pa-item p { font-size: 0.85rem; color: var(--gray); line-height: 1.6; }
+    .pa-item.primary { border-left-color: var(--gold); }
+    .pa-item.primary h4 { font-size: 1.1rem; }
+
+    /* ── RESULTS ── */
+    .results-section { background: var(--navy); }
+    .results-section .section-title { color: var(--white); }
+    .results-section .section-intro { color: #88a8c8; }
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .result-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(200,169,81,0.2);
+      border-top: 3px solid var(--gold);
+      padding: 32px 28px;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+    .result-card:hover { background: rgba(255,255,255,0.08); }
+    .result-amount {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .result-type {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #7a9ab8;
+      margin-bottom: 12px;
+    }
+    .result-desc { font-size: 0.9rem; color: #a8bdd4; line-height: 1.65; }
+    .results-cta { margin-top: 48px; text-align: center; }
+
+    /* ── ABOUT STRIP ── */
+    .about-section { background: var(--offwhite); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 72px;
+      align-items: start;
+    }
+    .about-photo-box {
+      position: relative;
+    }
+    .about-photo-box img {
+      width: 100%;
+      border-radius: 2px;
+      display: block;
+      box-shadow: 8px 8px 0 var(--gold);
+    }
+    .about-photo-placeholder {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: var(--light);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 0.85rem;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 8px 8px 0 var(--gold);
+    }
+    .credentials { margin-top: 32px; display: flex; flex-direction: column; gap: 10px; }
+    .cred {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--navy);
+      font-weight: 600;
+    }
+    .cred-dot {
+      width: 8px; height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .about-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .about-text .title-line {
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .about-text p { font-size: 1rem; color: #444; margin-bottom: 18px; line-height: 1.8; }
+    .about-text strong { color: var(--navy); }
+
+    /* ── REFERRAL SECTION ── */
+    .referral-section { background: var(--white); }
+    .referral-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .referral-box {
+      background: var(--navy);
+      color: var(--white);
+      padding: 48px 44px;
+      border-radius: 2px;
+    }
+    .referral-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      margin-bottom: 16px;
+      color: var(--gold);
+    }
+    .referral-box p { color: #a8bdd4; font-size: 0.95rem; line-height: 1.8; margin-bottom: 24px; }
+    .referral-list { list-style: none; margin-bottom: 32px; }
+    .referral-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.9rem;
+      color: #c8d8e8;
+      display: flex;
+      gap: 10px;
+    }
+    .referral-list li::before { content: '→'; color: var(--gold); flex-shrink: 0; }
+    .referral-text h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .referral-text p { color: var(--gray); font-size: 0.95rem; line-height: 1.8; margin-bottom: 16px; }
+
+    /* ── MEDIA / PUBLICATIONS ── */
+    .media-section { background: var(--offwhite); }
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .media-card {
+      background: var(--white);
+      padding: 28px;
+      border-radius: 2px;
+      border-left: 3px solid var(--gold);
+      box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+    }
+    .media-tag {
+      font-size: 0.72rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .media-card h4 { font-size: 0.95rem; color: var(--navy); font-weight: 700; line-height: 1.4; margin-bottom: 6px; }
+    .media-card p { font-size: 0.85rem; color: var(--gray); }
+
+    /* ── CONTACT FORM ── */
+    .contact-section { background: var(--navy); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 480px;
+      gap: 80px;
+      align-items: start;
+    }
+    .contact-info h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+    .contact-info p { color: #88a8c8; font-size: 1rem; line-height: 1.8; margin-bottom: 32px; }
+    .contact-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .cd-item { display: flex; gap: 16px; align-items: flex-start; }
+    .cd-label { font-size: 0.75rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 4px; }
+    .cd-value { color: var(--white); font-size: 1rem; }
+    .cd-value a { color: var(--white); text-decoration: none; }
+    .cd-value a:hover { color: var(--gold); }
+    .firm-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gold);
+      font-size: 0.9rem;
+      text-decoration: none;
+      border: 1px solid rgba(200,169,81,0.4);
+      padding: 10px 20px;
+      border-radius: 3px;
+      transition: background 0.2s;
+    }
+    .firm-link:hover { background: rgba(200,169,81,0.1); }
+    .contact-form {
+      background: var(--white);
+      padding: 44px 40px;
+      border-radius: 2px;
+    }
+    .contact-form h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--navy);
+      margin-bottom: 24px;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 2px;
+      padding: 12px 14px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.95rem;
+      color: #222;
+      background: #fafafa;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--gold); background: var(--white); }
+    .form-group textarea { height: 120px; resize: vertical; }
+    .form-submit {
+      width: 100%;
+      background: var(--gold);
+      color: var(--navy);
+      border: none;
+      padding: 16px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .form-submit:hover { background: var(--gold2); }
+    .form-disclaimer { font-size: 0.78rem; color: #888; margin-top: 12px; line-height: 1.5; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #0f1c30;
+      color: #6688aa;
+      padding: 40px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+    .footer-disclaimer {
+      background: #0a1420;
+      color: #445566;
+      font-size: 0.78rem;
+      padding: 16px 80px;
+      line-height: 1.6;
+    }
+
+    .nav-attorneys {
+      color: var(--gold) !important;
+      font-weight: 700 !important;
+    }
+    .nav-attorneys:hover { background: #fffbf0 !important; }
+
+    /* ── NEWS / BLOG ── */
+    .news-section { background: var(--white); }
+    .news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 40px; }
+    .news-card { background: var(--offwhite); border-top: 3px solid var(--gold); border-radius: 2px; overflow: hidden; transition: box-shadow 0.2s; }
+    .news-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+    .news-card-body { padding: 24px 24px 28px; }
+    .news-date { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gold); font-weight: 700; margin-bottom: 8px; }
+    .news-card h4 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 10px; line-height: 1.35; }
+    .news-card p { font-size: 0.88rem; color: var(--gray); line-height: 1.7; margin-bottom: 16px; }
+    .news-read { font-size: 0.82rem; font-weight: 700; color: var(--gold); text-decoration: none; letter-spacing: 0.5px; }
+    .news-read:hover { color: var(--navy); }
+
+    /* ── ATTORNEYS ONLY ── */
+    .attorneys-section { background: #0f1c30; }
+    .attorneys-section .section-title { color: var(--white); }
+    .attorneys-section .section-intro { color: #7a9ab8; }
+    .atty-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 48px; }
+    .atty-box { background: rgba(255,255,255,0.04); border: 1px solid rgba(200,169,81,0.15); border-top: 3px solid var(--gold); padding: 36px 32px; border-radius: 2px; }
+    .atty-box h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--gold); margin-bottom: 14px; }
+    .atty-box p { font-size: 0.92rem; color: #8aa8c8; line-height: 1.8; margin-bottom: 16px; }
+    .atty-box ul { list-style: none; margin-bottom: 24px; }
+    .atty-box ul li { font-size: 0.88rem; color: #a8bdd4; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; gap: 10px; }
+    .atty-box ul li::before { content: '→'; color: var(--gold); flex-shrink: 0; }
+    .atty-contact-box { background: rgba(200,169,81,0.08); border: 1px solid rgba(200,169,81,0.3); padding: 32px; border-radius: 2px; grid-column: 1 / -1; }
+    .atty-contact-box h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--white); margin-bottom: 12px; }
+    .atty-contact-box p { font-size: 0.92rem; color: #8aa8c8; line-height: 1.8; margin-bottom: 20px; max-width: 700px; }
+    .atty-contact-row { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    @media (max-width: 1100px) {
+      section { padding: 60px 40px; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-photo { display: none; }
+      .hero-text { padding: 80px 40px; }
+      .practice-areas-grid { grid-template-columns: repeat(2, 1fr); }
+      .results-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-photo-box { max-width: 320px; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .who-grid { grid-template-columns: repeat(2, 1fr); }
+      .referral-grid { grid-template-columns: 1fr; }
+      .media-grid { grid-template-columns: repeat(2, 1fr); }
+      .news-grid { grid-template-columns: repeat(2, 1fr); }
+      .atty-grid { grid-template-columns: 1fr; }
+      .practice-intro-grid { grid-template-columns: 1fr; gap: 32px; }
+    }
+    @media (max-width: 680px) {
+      section { padding: 48px 20px; }
+      .topbar { padding: 8px 20px; }
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .trust-bar { padding: 20px; }
+      .who-grid, .results-grid, .media-grid, .news-grid, .atty-grid { grid-template-columns: 1fr; }
+      .practice-areas-grid { grid-template-columns: 1fr 1fr; }
+      footer, .footer-disclaimer { padding: 24px 20px; }
+      .hero-text { padding: 60px 20px; }
+      .contact-form { padding: 32px 24px; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <span class="topbar-firm">Member, <a href="https://www.centralmolaw.com" target="_blank">Gump, Faiella &amp; Bugalski, LLC</a> &nbsp;|&nbsp; Columbia &amp; Moberly, Missouri</span>
+  <span>
+    <a href="tel:18002643455">Toll Free: 1-800-264-3455</a>
+    &nbsp;|&nbsp;
+    <a href="tel:16606633100">Moberly: (660) 263-3100</a>
+    &nbsp;|&nbsp;
+    <a href="tel:15738182646">Columbia: (573) 818-2646</a>
+  </span>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#top" class="nav-brand">Chris <span>Faiella</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#practice">Practice Areas</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#media">Publications</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#attorneys" class="nav-attorneys">Attorneys ▸</a></li>
+    <li><a href="#contact" class="nav-cta">Free Consultation</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top" style="padding:0;">
+  <div class="hero-text">
+    <div class="hero-eyebrow">Missouri Personal Injury Attorney</div>
+    <h1>When the Stakes Are High,<em>Results Matter.</em></h1>
+    <p class="hero-sub">For over 30 years, Chris Faiella has fought for the seriously injured — taking on large corporations, negligent trucking companies, and insurance giants that wrongfully deny claims. Over $300 million recovered for clients throughout Missouri.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="num">$300M+</div>
+        <div class="lbl">Recovered for Clients</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">30+</div>
+        <div class="lbl">Years of Experience</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">AV</div>
+        <div class="lbl">Martindale-Hubbell Rated</div>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Free Case Consultation</a>
+      <a href="#results" class="btn-secondary">View Case Results</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <!-- Replace src with actual photo URL from firm site or uploaded photo -->
+    <!-- <img src="[PHOTO_URL]" alt="Chris Faiella, Missouri Personal Injury Attorney"/> -->
+    <div class="hero-photo-placeholder">
+      <svg width="80" height="80" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v2h20v-2c0-3.3-6.7-5-10-5z"/></svg>
+      <p>[ Insert attorney photo here ]<br/><small>Use photo from centralmolaw.com/team/chris-faiella/</small></p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><strong>Super Lawyers®</strong><span>Selected — Missouri</span></div>
+  <div class="trust-item"><strong>AV Preeminent®</strong><span>Martindale-Hubbell — Highest Rating</span></div>
+  <div class="trust-item"><strong>U.S. Supreme Court</strong><span>Licensed to Practice</span></div>
+  <div class="trust-item"><strong>No Fee Unless We Win</strong><span>Personal Injury Cases</span></div>
+  <div class="trust-item"><strong>Free Consultation</strong><span>Call or Submit Online</span></div>
+</div>
+
+<!-- WHO I HELP -->
+<section class="who-section" id="who">
+  <div class="section-label">Who I Represent</div>
+  <div class="section-title">Three Types of Clients I Serve</div>
+  <p class="section-intro">Whether you were injured in an accident, an attorney needs a proven trial partner on a high-stakes case, or you were referred by someone who knows my work — I am ready to help.</p>
+  <div class="who-grid">
+    <div class="who-card">
+      <h3>Seriously Injured Individuals &amp; Families</h3>
+      <p>If you or a family member has been seriously hurt in a car accident, truck crash, or other injury — and you need an attorney who will actually fight for full compensation rather than a quick settlement — I want to hear your story. No fee unless we win.</p>
+    </div>
+    <div class="who-card">
+      <h3>Attorneys Referring High-Stakes Cases</h3>
+      <p>Lawyers throughout Missouri refer their most difficult personal injury, products liability, and insurance bad faith cases to me. If you have a client with a significant injury and need an experienced trial lawyer to take the case forward, let's talk.</p>
+    </div>
+    <div class="who-card">
+      <h3>Former Clients &amp; Their Referrals</h3>
+      <p>Many of my clients come from people who have worked with me before or know someone who has. If you were referred by a former client, know that you will receive the same commitment and personal attention that earned that referral.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICE AREAS -->
+<section class="practice-section" id="practice">
+  <div class="practice-intro-grid">
+    <div>
+      <div class="section-label">Practice Areas</div>
+      <div class="section-title">Personal Injury. Nothing Else.</div>
+      <p class="section-intro" style="margin-bottom:0;">I focus exclusively on personal injury and insurance cases. That singular focus means deeper experience, better results, and a practice built around what catastrophically injured people actually need.</p>
+    </div>
+    <div style="padding-top:20px;">
+      <p style="color:var(--gray);line-height:1.8;font-size:0.95rem;">My highest-volume cases are car accidents, truck accidents, brain injuries, and wrongful death cases. But I handle the full range of serious injury cases — because if you get one, it matters. Products liability cases, medical malpractice, drownings, boating accidents, nursing home neglect, premises liability, and insurance bad faith cases all require the same depth of preparation and commitment to results that I bring to every case I handle.</p>
+    </div>
+  </div>
+  <div class="practice-areas-grid">
+    <a href="#contact" class="pa-item primary">
+      <div class="pa-icon">🚗</div>
+      <h4>Car Accidents</h4>
+      <p>Missouri's most common serious injury cases. From rear-end crashes to head-on collisions, I handle all types of auto accident claims and know how to maximize recovery.</p>
+    </a>
+    <a href="#contact" class="pa-item primary">
+      <div class="pa-icon">🚛</div>
+      <h4>Truck &amp; Tractor-Trailer Accidents</h4>
+      <p>Commercial trucking cases involve federal regulations, black box data, and complex liability chains. These cases require aggressive investigation from day one.</p>
+    </a>
+    <a href="#contact" class="pa-item primary">
+      <div class="pa-icon">🧠</div>
+      <h4>Brain Injury (TBI)</h4>
+      <p>Traumatic brain injuries are among the most serious and most contested claims. I have spent decades building the medical and legal knowledge to win these cases.</p>
+    </a>
+    <a href="#contact" class="pa-item primary">
+      <div class="pa-icon">⚖️</div>
+      <h4>Wrongful Death</h4>
+      <p>When negligence costs a life, families deserve full accountability. I fight for families who have lost someone and need a lawyer who will see it through.</p>
+    </a>
+    <a href="#contact" class="pa-item">
+      <div class="pa-icon">🏭</div>
+      <h4>Products Liability</h4>
+      <p>Defective vehicles, equipment, generators, medical devices. When a product fails and people die or are severely injured, manufacturers must be held accountable.</p>
+    </a>
+    <a href="#contact" class="pa-item">
+      <div class="pa-icon">🏥</div>
+      <h4>Medical Malpractice</h4>
+      <p>When healthcare providers fall below the standard of care, the consequences can be life-altering. These cases require deep medical knowledge and expert preparation.</p>
+    </a>
+    <a href="#contact" class="pa-item">
+      <div class="pa-icon">🛡️</div>
+      <h4>Insurance Bad Faith</h4>
+      <p>Third-party bad faith, first-party vexatious refusal, wrongful coverage denial. When insurance companies act in bad faith, they can be held liable for far more than the policy limits.</p>
+    </a>
+    <a href="#contact" class="pa-item">
+      <div class="pa-icon">🌊</div>
+      <h4>Boating, Drowning &amp; Recreational Injury</h4>
+      <p>Boating accidents, drownings, Jet Ski injuries, electrocution in water, and recreational product defects. Complex cases that require thorough investigation.</p>
+    </a>
+    <a href="#contact" class="pa-item">
+      <div class="pa-icon">🏗️</div>
+      <h4>Premises Liability &amp; Slip and Fall</h4>
+      <p>Property owners have a duty to keep their premises safe. When they fail and someone is seriously injured, they must answer for it.</p>
+    </a>
+    <a href="#contact" class="pa-item">
+      <div class="pa-icon">🏃</div>
+      <h4>Pedestrian &amp; Bicycle Accidents</h4>
+      <p>Pedestrians and cyclists struck by vehicles face devastating injuries. I fight for full compensation against drivers and their insurers.</p>
+    </a>
+    <a href="#contact" class="pa-item">
+      <div class="pa-icon">🏥</div>
+      <h4>Nursing Home Neglect &amp; Abuse</h4>
+      <p>When nursing facilities fail vulnerable residents through neglect, abuse, or inadequate staffing, families deserve justice and accountability.</p>
+    </a>
+    <a href="#contact" class="pa-item">
+      <div class="pa-icon">🏈</div>
+      <h4>Sports &amp; Catastrophic Injury</h4>
+      <p>Seriously injured student athletes, coaching negligence, and catastrophic sports injuries. When these cases arise, they are significant and require experienced representation.</p>
+    </a>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results-section" id="results" style="padding:80px;">
+  <div class="section-label" style="color:var(--gold)">Track Record</div>
+  <div class="section-title">Selected Case Results</div>
+  <p class="section-intro">A partial record of settlements and verdicts. Many results are confidential by agreement. Past results do not guarantee future outcomes.</p>
+  <div class="results-grid">
+    <div class="result-card">
+      <div class="result-amount">$6,200,000</div>
+      <div class="result-type">Defective Product — Wrongful Death</div>
+      <p class="result-desc">Family of man who died from carbon monoxide poisoning aboard a cabin cruiser. Suit against Kohler Company for defective generator. Investigation revealed 23% failure rate on the part. Kohler issued a worldwide recall as a result of this case.</p>
+    </div>
+    <div class="result-card">
+      <div class="result-amount">$5,500,000</div>
+      <div class="result-type">Insurance Bad Faith</div>
+      <p class="result-desc">Man suffered serious injury from a fall. Insurer wrongfully denied coverage and refused to defend. Insured obtained excess verdict, then pursued bad faith claim against insurer. Case settled for $5.5 million.</p>
+    </div>
+    <div class="result-card">
+      <div class="result-amount">$4,500,000</div>
+      <div class="result-type">Auto Accident — Brain &amp; Back Injury</div>
+      <p class="result-desc">Client ejected from vehicle, sustaining closed head injury, T-12 burst fracture, and multiple rib fractures. Defense admitted liability but disputed TBI. Extensive expert testimony secured $4.5 million settlement.</p>
+    </div>
+    <div class="result-card">
+      <div class="result-amount">$4,000,000</div>
+      <div class="result-type">College Sports Training Injury</div>
+      <p class="result-desc">Collegiate athlete suffered serious sports injury during training due to institutional negligence by coaches and trainers. Settlement included program safety changes to protect future athletes.</p>
+    </div>
+    <div class="result-card">
+      <div class="result-amount">$3,100,000</div>
+      <div class="result-type">Insurance Bad Faith — Wrongful Death</div>
+      <p class="result-desc">Worker killed in trench collapse. Insurer refused coverage and refused to settle despite attorney advising the claim was meritorious. Settled on appeal for $3.1 million.</p>
+    </div>
+    <div class="result-card">
+      <div class="result-amount">$2,100,000</div>
+      <div class="result-type">RV Wrongful Deaths</div>
+      <p class="result-desc">Four family members killed when a generator was used in an RV that lacked CO detectors and a vapor-tight seal between sleeping quarters and engine room.</p>
+    </div>
+    <div class="result-card">
+      <div class="result-amount">$1,280,000</div>
+      <div class="result-type">Insurance Coverage Denial</div>
+      <p class="result-desc">65-year-old injured in auto collision; business insurer denied coverage. Obtained $1.5M judgment, then pursued insurer directly. Settled for $1.28 million shortly before trial.</p>
+    </div>
+    <div class="result-card">
+      <div class="result-amount">$1,300,000</div>
+      <div class="result-type">Truck Accident — Wrongful Death</div>
+      <p class="result-desc">Tractor-trailer skidded over a crest and struck a pickup truck head-on, causing the vehicle to engulf in flames. Wrongful death recovery for surviving mother and four children.</p>
+    </div>
+    <div class="result-card">
+      <div class="result-amount">$820,000</div>
+      <div class="result-type">Auto Accident — Wrongful Death</div>
+      <p class="result-desc">Jury verdict after rollover accident of a Jeep CJ7. Vehicle passed safety inspection despite missing shoulder belt. Jury awarded $1.1M for wife's death; net verdict $820,000 after fault apportionment.</p>
+    </div>
+  </div>
+  <div class="results-cta">
+    <a href="https://www.centralmolaw.com/our-results/" target="_blank" class="btn-primary">View Full Results at GFB Law</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-grid">
+    <div class="about-photo-box">
+      <!-- Replace with actual photo -->
+      <!-- <img src="[PHOTO_URL]" alt="Chris Faiella"/> -->
+      <div class="about-photo-placeholder">[ Attorney photo — use image from centralmolaw.com/team/chris-faiella/ ]</div>
+      <div class="credentials">
+        <div class="cred"><div class="cred-dot"></div>AV Preeminent® — Martindale-Hubbell</div>
+        <div class="cred"><div class="cred-dot"></div>Super Lawyers® — Missouri</div>
+        <div class="cred"><div class="cred-dot"></div>Missouri Bar — Licensed 1995</div>
+        <div class="cred"><div class="cred-dot"></div>U.S. Supreme Court — Licensed</div>
+        <div class="cred"><div class="cred-dot"></div>8th &amp; 10th Circuit Courts of Appeals</div>
+        <div class="cred"><div class="cred-dot"></div>MU School of Law, J.D. 1995</div>
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="section-label">About Chris Faiella</div>
+      <h2>Chris Faiella</h2>
+      <div class="title-line">Member, Gump, Faiella &amp; Bugalski, LLC &nbsp;·&nbsp; Missouri Personal Injury Attorney</div>
+      <p>For more than 30 years, I have dedicated my practice to one thing: fighting for people who have been seriously injured through someone else's negligence. I do not practice family law, criminal defense, or estate planning. I practice personal injury — and I have spent three decades becoming very good at it.</p>
+      <p>My clients range from working families hurt in car accidents on Missouri highways to collegiate athletes with career-ending injuries, from families who have lost a loved one in a wrongful death to businesses and individuals whose insurance companies wrongfully denied legitimate claims. What they all share is the need for an attorney who will work harder than the other side, know the medicine, master the law, and fight for everything they deserve.</p>
+      <p><strong>Lawyers refer cases to me</strong> because they know I will handle them with the same commitment I bring to cases I originate myself. If you are an attorney with a serious injury case outside your practice area — a tractor-trailer wreck, a products liability case, a brain injury claim, or an insurance bad faith matter — I welcome the conversation.</p>
+      <p><strong>I am a member of Gump, Faiella &amp; Bugalski, LLC</strong>, a full-service firm with offices in Columbia and Moberly, Missouri. My personal injury clients have the benefit of a complete litigation support team behind them, while working directly with me throughout their case.</p>
+      <a href="#contact" class="btn-primary" style="margin-top:8px;">Schedule a Free Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ATTORNEY REFERRALS -->
+<section class="referral-section" id="referrals">
+  <div class="section-label">For Attorneys</div>
+  <div class="section-title">Attorney Referrals Welcome</div>
+  <div class="referral-grid">
+    <div class="referral-box">
+      <h3>Why Attorneys Refer Cases to Me</h3>
+      <p>I receive a significant portion of my caseload from other lawyers — both personal injury attorneys with overflow or specialized cases, and general practice attorneys who occasionally handle a serious injury matter. Here is what they tell me matters:</p>
+      <ul class="referral-list">
+        <li>Over $300 million recovered — a documented track record in high-stakes cases</li>
+        <li>Deep expertise in insurance bad faith and third-party bad faith claims</li>
+        <li>Experienced in products liability, trucking, and complex multi-party litigation</li>
+        <li>AV Preeminent® rated — the highest peer review rating from Martindale-Hubbell</li>
+        <li>Selected to Missouri Super Lawyers®</li>
+        <li>Licensed before the U.S. Supreme Court and multiple federal circuits</li>
+        <li>Referral arrangements handled professionally and confidentially</li>
+      </ul>
+      <a href="#contact" class="btn-primary">Discuss a Referral</a>
+    </div>
+    <div class="referral-text">
+      <h3>Cases I Accept on Referral</h3>
+      <p>Personal injury attorneys refer cases to me primarily in three areas: <strong>third-party insurance bad faith</strong>, <strong>first-party vexatious refusal cases</strong>, and <strong>complex products liability matters</strong> where specialized litigation experience is needed.</p>
+      <p>General practice attorneys refer their most serious injury cases — tractor-trailer accidents, wrongful death, catastrophic car accidents, pedestrian cases, medical malpractice, drownings, boating accidents, and slip-and-fall cases with significant damages.</p>
+      <p>In every referred case, I work diligently to achieve the best possible result for the client — and to honor the trust the referring attorney has placed in me. Referral fee arrangements where permitted under Missouri ethics rules are handled professionally and promptly.</p>
+      <p>If you have a case you would like to discuss, call me directly or submit the contact form. Initial referral consultations are always confidential.</p>
+      <a href="tel:18002643455" class="btn-primary" style="margin-top:8px;">Call 1-800-264-3455</a>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS & MEDIA -->
+<section class="media-section" id="media">
+  <div class="section-label">Publications &amp; Media</div>
+  <div class="section-title">Author. Speaker. Expert Commentator.</div>
+  <p class="section-intro">In addition to practicing law, Chris Faiella has spent decades contributing to the legal profession and the public through writing, teaching, and media commentary.</p>
+  <div class="media-grid">
+    <div class="media-card">
+      <div class="media-tag">Thomson Reuters / Aspatore</div>
+      <h4>Knowing Your Client and Your Case</h4>
+      <p>Chapter: The Foundation of a Successful Case Strategy for Personal Injury Lawyers. Thomson Reuters/Aspatore, 2011.</p>
+    </div>
+    <div class="media-card">
+      <div class="media-tag">Thomson Reuters / Aspatore</div>
+      <h4>Personal Injury Settlement Agreements Line by Line</h4>
+      <p>A detailed look at personal injury settlement agreements and how to change them to meet client needs. 2014.</p>
+    </div>
+    <div class="media-card">
+      <div class="media-tag">Missouri Bar CLE</div>
+      <h4>Chapter 13 — Insurance Bad Faith Law</h4>
+      <p>MO Bar CLE Publications, 2010. Authoritative chapter on insurance bad faith litigation in Missouri.</p>
+    </div>
+    <div class="media-card">
+      <div class="media-tag">Missouri Trial Attorney Journal</div>
+      <h4>Proving Damages in Mild Brain Injury Cases</h4>
+      <p>A Thumbnail Sketch. Volume XXI, Number 3, Fall 2003. Widely cited resource on TBI damage proof.</p>
+    </div>
+    <div class="media-card">
+      <div class="media-tag">Missouri Lawyers Weekly — Article of the Year</div>
+      <h4>Partial Settlement in Multi-Party Injury Cases</h4>
+      <p>Missouri Lawyers Weekly, July 1998. Selected as Article of the Year by the Editorial Board, January 1999.</p>
+    </div>
+    <div class="media-card">
+      <div class="media-tag">Interview / Media</div>
+      <h4>Expert Commentator — Sports &amp; Recreational Injury</h4>
+      <p>Frequent media commentator on school sports injuries, recreational safety, and insurance industry practices. Featured in Interview Platform and additional media outlets.</p>
+    </div>
+    <div class="media-card">
+      <div class="media-tag">CLE Speaker — National</div>
+      <h4>Third Party Bad Faith &amp; Insurance Litigation</h4>
+      <p>National Business Institute, 2015–2017. Speaker on insurance bad faith, UM/UIM law, and trial strategy for personal injury lawyers.</p>
+    </div>
+    <div class="media-card">
+      <div class="media-tag">CLE Speaker — Missouri Bar</div>
+      <h4>Auto Accident Cases, Ethics &amp; Trial Advocacy</h4>
+      <p>Multiple Missouri Bar CLE presentations 1999–2012. Topics include sanctions, discovery, exhibits, mediation, and case strategy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS / BLOG -->
+<section class="news-section" id="news" style="padding:80px 80px;">
+  <div class="section-label">News &amp; Insights</div>
+  <div class="section-title">From the Blog</div>
+  <p class="section-intro">Practical information about personal injury law, insurance tactics, and what injured Missourians need to know to protect their rights.</p>
+  <div class="news-grid">
+    <div class="news-card">
+      <div class="news-card-body">
+        <div class="news-date">March 2026</div>
+        <h4>The Mechanics of Brain Injury: What Happens to Your Brain in a Car Accident</h4>
+        <p>Traumatic brain injuries are among the most serious — and most contested — consequences of car accidents. Understanding the science of how they happen is critical to protecting your legal rights.</p>
+        <a href="#contact" class="news-read">Read More →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="news-card-body">
+        <div class="news-date">Coming Soon</div>
+        <h4>What to Do in the First 72 Hours After a Serious Car Accident in Missouri</h4>
+        <p>The steps you take immediately after an accident can determine the outcome of your case. Most people make costly mistakes in the first three days — here is how to avoid them.</p>
+        <a href="#contact" class="news-read">Contact Us →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="news-card-body">
+        <div class="news-date">Coming Soon</div>
+        <h4>When Your Insurance Company Denies a Legitimate Claim: Your Rights Under Missouri Law</h4>
+        <p>Missouri law provides powerful remedies when insurers wrongfully deny claims or refuse to settle in good faith. Here is what policyholders and injury victims need to know.</p>
+        <a href="#contact" class="news-read">Contact Us →</a>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:36px;">
+    <a href="#contact" class="btn-primary">Have a Question? Contact Chris Directly</a>
+  </div>
+</section>
+
+<!-- ATTORNEYS ONLY -->
+<section class="attorneys-section" id="attorneys" style="padding:80px;">
+  <div class="section-label" style="color:var(--gold);">For Attorneys Only</div>
+  <div class="section-title">Referring a Case?</div>
+  <p class="section-intro">This page is for attorneys considering a referral or co-counsel arrangement. All inquiries are handled confidentially and promptly.</p>
+  <div class="atty-grid">
+    <div class="atty-box">
+      <h3>PI Attorneys — Overflow &amp; Specialized Cases</h3>
+      <p>I regularly accept referrals from personal injury attorneys who need an experienced trial lawyer on cases outside their bandwidth or requiring specialized expertise. Cases I most commonly receive on referral from PI firms:</p>
+      <ul>
+        <li>Third-party insurance bad faith cases</li>
+        <li>First-party vexatious refusal claims (RSMo § 375.420)</li>
+        <li>Complex products liability — vehicles, equipment, consumer products</li>
+        <li>Cases requiring federal court or appellate experience</li>
+        <li>High-value TBI and catastrophic injury cases needing intensive expert preparation</li>
+      </ul>
+    </div>
+    <div class="atty-box">
+      <h3>General Practice Attorneys — Serious Injury Cases</h3>
+      <p>Many of my best cases come from general practice, family law, estate planning, criminal defense, and other non-PI attorneys whose clients are suddenly involved in a serious injury matter. Cases I commonly receive from general practice attorneys:</p>
+      <ul>
+        <li>Tractor-trailer and commercial vehicle accidents</li>
+        <li>Wrongful death — auto, product, premises</li>
+        <li>Catastrophic car accident cases with significant damages</li>
+        <li>Pedestrian and bicycle accident cases</li>
+        <li>Drownings, boating accidents, recreational product injuries</li>
+        <li>Medical malpractice and nursing home neglect</li>
+      </ul>
+    </div>
+    <div class="atty-contact-box">
+      <h3>How Referrals Work</h3>
+      <p>All referral inquiries are confidential. I am happy to discuss the case, give you my initial assessment, and explain how a referral arrangement would work — including fee division where permitted under Missouri Rule 4-1.5(e). I handle referred cases with the same preparation and commitment I bring to every case. Your client will be treated as my own, and you will be kept informed throughout.</p>
+      <p>The fastest way to reach me is by phone. For a written inquiry, use the form below and select "Attorney Referral" as the case type — your submission goes directly to me, not a general inbox.</p>
+      <div class="atty-contact-row">
+        <a href="tel:18002643455" class="btn-primary">Call 1-800-264-3455</a>
+        <a href="#contact" class="btn-secondary" style="border-color:rgba(200,169,81,0.5);color:var(--gold);">Submit a Referral Inquiry</a>
+      </div>
+      <p style="margin-top:20px;font-size:0.8rem;color:#445566;">Missouri Rule 4-1.5(e) governs fee division with referring attorneys. All arrangements are documented in writing in advance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact" style="padding:80px;">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="section-label" style="color:var(--gold)">Get in Touch</div>
+      <h2>Free Case Consultation</h2>
+      <p>Whether you are an injured person, a family member, or an attorney with a referral — I welcome the conversation. Personal injury consultations are always free, and there is no fee unless we win your case.</p>
+      <div class="contact-detail">
+        <div class="cd-item">
+          <div>
+            <div class="cd-label">Toll Free</div>
+            <div class="cd-value"><a href="tel:18002643455">1-800-264-3455</a></div>
+          </div>
+        </div>
+        <div class="cd-item">
+          <div>
+            <div class="cd-label">Email</div>
+            <div class="cd-value"><a href="/cdn-cgi/l/email-protection#42212a302b310224232b272e2e232e23356c212d2f"><span class="__cf_email__" data-cfemail="f09398829983b0969199959c9c919c9187de939f9d">[email&#160;protected]</span></a> <span style="color:#557799;font-size:0.8rem;">(set up when domain is registered)</span></div>
+          </div>
+        </div>
+        <div class="cd-item">
+          <div>
+            <div class="cd-label">Moberly Office</div>
+            <div class="cd-value">110 North Fifth Street<br/>Moberly, MO 65270<br/><a href="tel:16606633100">(660) 263-3100</a></div>
+          </div>
+        </div>
+        <div class="cd-item">
+          <div>
+            <div class="cd-label">Columbia Office</div>
+            <div class="cd-value">1000 W. Nifong Blvd., Bldg. 2, Suite 220B<br/>Columbia, MO 65203<br/><a href="tel:15738182646">(573) 818-2646</a></div>
+          </div>
+        </div>
+      </div>
+      <a href="https://www.centralmolaw.com" target="_blank" class="firm-link">
+        ↗ Gump, Faiella &amp; Bugalski, LLC — Full Firm Website
+      </a>
+    </div>
+    <div class="contact-form">
+      <h3>Tell Me About Your Case</h3>
+      <!-- Form action should be set up with a form handler (e.g. Formspree, WPForms, or custom) that sends to chris@faiellalaw.com -->
+      <form action="#" method="POST" id="contactForm">
+        <input type="hidden" name="source" value="faiellalaw.com"/>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" name="first_name" required placeholder="John"/>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" name="last_name" required placeholder="Smith"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required placeholder="(573) 555-0100"/>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com"/>
+        </div>
+        <div class="form-group">
+          <label for="ctype">Type of Case</label>
+          <select id="ctype" name="case_type">
+            <option value="">— Select —</option>
+            <option>Car Accident</option>
+            <option>Truck / Tractor-Trailer Accident</option>
+            <option>Brain Injury</option>
+            <option>Wrongful Death</option>
+            <option>Products Liability</option>
+            <option>Medical Malpractice</option>
+            <option>Insurance Bad Faith</option>
+            <option>Boating / Drowning / Recreational</option>
+            <option>Premises Liability / Slip &amp; Fall</option>
+            <option>Nursing Home Neglect</option>
+            <option>Attorney Referral</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="msg">Brief Description of Your Situation</label>
+          <textarea id="msg" name="message" placeholder="Please briefly describe what happened and how we can help..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Submit — Free Consultation</button>
+        <p class="form-disclaimer">Submitting this form does not create an attorney-client relationship. Do not include confidential information. We will contact you promptly to discuss your situation.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <strong style="color:white;font-family:'Playfair Display',serif;font-size:1.1rem;">Chris Faiella</strong><br/>
+    Member, Gump, Faiella &amp; Bugalski, LLC &nbsp;|&nbsp; <a href="https://www.centralmolaw.com">centralmolaw.com</a>
+  </div>
+  <div style="text-align:center;">
+    <a href="tel:18002643455">1-800-264-3455</a> &nbsp;|&nbsp;
+    <a href="#contact">Free Consultation</a> &nbsp;|&nbsp;
+    <a href="#practice">Practice Areas</a> &nbsp;|&nbsp;
+    <a href="#results">Results</a>
+  </div>
+  <div style="text-align:right;">
+    Columbia &amp; Moberly, Missouri<br/>
+    © 2026 Chris Faiella. All Rights Reserved.
+  </div>
+</footer>
+<div class="footer-disclaimer">
+  The choice of a lawyer is an important decision and should not be based solely upon advertisements. Past results do not guarantee similar outcomes in future cases. The information on this website is for general informational purposes only and does not constitute legal advice. Visiting this site does not create an attorney-client relationship. Chris Faiella practices as a member of Gump, Faiella &amp; Bugalski, LLC, licensed in Missouri and before the U.S. Suprem

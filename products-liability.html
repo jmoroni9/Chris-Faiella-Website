@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Missouri Products Liability Lawyer | Chris Faiella</title>
+  <meta name="description" content="Injured by a defective product in Missouri? Attorney Chris Faiella handles serious products liability cases against manufacturers, distributors, and retailers. Free consultation."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --navy:#1a2a4a; --navy2:#243a5e; --gold:#c8a951; --gold2:#e2c070;
+      --white:#ffffff; --offwhite:#f8f7f4; --gray:#555; --lightgray:#e8e4dc;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Source Sans 3',sans-serif;color:#222;background:var(--white);line-height:1.7;}
+    .topbar{background:var(--navy);color:#b0c4de;font-size:.85rem;padding:8px 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;}
+    .topbar a{color:var(--gold);text-decoration:none;} .topbar a:hover{color:var(--gold2);}
+    .topbar-firm{font-style:italic;}
+    nav{background:var(--white);border-bottom:3px solid var(--gold);padding:0 40px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.08);}
+    .nav-brand{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--navy);text-decoration:none;padding:18px 0;}
+    .nav-brand span{color:var(--gold);}
+    .nav-links{display:flex;gap:0;list-style:none;}
+    .nav-links a{display:block;padding:22px 16px;color:var(--navy);font-size:.9rem;font-weight:600;text-decoration:none;transition:color .2s,background .2s;}
+    .nav-links a:hover{color:var(--gold);background:var(--offwhite);}
+    .nav-attorneys{color:var(--navy2)!important;border-left:1px solid var(--lightgray);}
+    .nav-cta{background:var(--gold)!important;color:var(--navy)!important;margin-left:8px;}
+    .nav-cta:hover{background:var(--gold2)!important;}
+    .hero{background:linear-gradient(160deg,#0d1d36 0%,#1a2a4a 60%,#243a5e 100%);color:white;padding:80px 40px 70px;position:relative;overflow:hidden;}
+    .hero::before{content:'';position:absolute;top:-60px;right:-60px;width:500px;height:500px;background:radial-gradient(circle,rgba(200,169,81,.07) 0%,transparent 70%);pointer-events:none;}
+    .hero-breadcrumb{font-size:.8rem;color:var(--gold);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px;}
+    .hero-breadcrumb a{color:var(--gold);text-decoration:none;} .hero-breadcrumb a:hover{text-decoration:underline;}
+    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4vw,3.4rem);font-weight:900;line-height:1.15;margin-bottom:22px;}
+    .hero h1 em{color:var(--gold);font-style:normal;}
+    .hero-sub{font-size:1.15rem;color:#b8cce0;font-weight:300;max-width:640px;margin-bottom:36px;line-height:1.75;}
+    .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;}
+    .btn-primary{background:var(--gold);color:var(--navy);font-weight:700;font-size:1rem;padding:14px 32px;border:none;cursor:pointer;text-decoration:none;display:inline-block;transition:background .2s;}
+    .btn-primary:hover{background:var(--gold2);}
+    .btn-secondary{background:transparent;color:white;font-weight:600;font-size:1rem;padding:14px 32px;border:2px solid rgba(255,255,255,.35);text-decoration:none;display:inline-block;transition:border-color .2s,background .2s;}
+    .btn-secondary:hover{border-color:var(--gold);background:rgba(200,169,81,.1);}
+    .hero-stats{display:flex;gap:40px;margin-top:50px;padding-top:40px;border-top:1px solid rgba(255,255,255,.12);flex-wrap:wrap;}
+    .hero-stat strong{display:block;font-family:'Playfair Display',serif;font-size:2rem;color:var(--gold);font-weight:700;}
+    .hero-stat span{font-size:.8rem;color:#7a9ab8;letter-spacing:.5px;}
+    section{padding:70px 40px;max-width:1100px;margin:0 auto;}
+    .section-label{font-size:.75rem;color:var(--gold);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+    h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;color:var(--navy);margin-bottom:18px;line-height:1.25;}
+    h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--navy);font-weight:700;margin-bottom:10px;}
+    p{color:var(--gray);font-size:1rem;line-height:1.8;margin-bottom:16px;}
+    p:last-child{margin-bottom:0;}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
+    .full-bleed-light{background:var(--offwhite);}
+    .full-bleed-dark{background:var(--navy);}
+
+    /* THEORIES */
+    .theories-section{background:var(--navy);padding:70px 40px;}
+    .theories-inner{max-width:1100px;margin:0 auto;}
+    .theories-section .section-label{color:var(--gold);}
+    .theories-section h2{color:white;margin-bottom:16px;}
+    .theories-section > .theories-inner > p{color:#b8cce0;max-width:700px;}
+    .theories-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px;}
+    .theory-card{background:rgba(255,255,255,.06);border-top:3px solid var(--gold);padding:28px;}
+    .theory-card h3{color:var(--gold);font-size:1.05rem;margin-bottom:10px;}
+    .theory-card p{color:#b8cce0;font-size:.92rem;}
+
+    /* PRODUCT TYPES */
+    .products-section{background:var(--offwhite);padding:70px 40px;}
+    .products-inner{max-width:1100px;margin:0 auto;}
+    .products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px;}
+    .product-card{background:white;border-top:3px solid var(--gold);padding:26px;box-shadow:0 2px 10px rgba(0,0,0,.05);}
+    .product-card h3{font-size:1.05rem;margin-bottom:8px;}
+    .product-card p{font-size:.91rem;}
+
+    /* WHO IS LIABLE */
+    .liable-section{padding:70px 40px;}
+    .liable-inner{max-width:1100px;margin:0 auto;}
+
+    .checklist{list-style:none;margin:20px 0;}
+    .checklist li{padding:10px 0;padding-left:28px;position:relative;color:var(--gray);font-size:.97rem;border-bottom:1px solid var(--lightgray);}
+    .checklist li:last-child{border-bottom:none;}
+    .checklist li::before{content:'✓';position:absolute;left:0;color:var(--gold);font-weight:700;}
+
+    .info-box{background:var(--offwhite);border-left:4px solid var(--gold);padding:30px 34px;margin-top:0;}
+    .info-box h3{color:var(--navy);margin-bottom:12px;font-size:1.1rem;}
+    .info-box p{font-size:.94rem;}
+
+    .results-section{background:var(--navy);padding:70px 40px;}
+    /* MASS TORT */
+    .mass-section{background:var(--offwhite);padding:70px 40px;}
+    .mass-inner{max-width:1100px;margin:0 auto;}
+    .mass-compare{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:36px;}
+    .mass-card{background:white;border-top:3px solid var(--gold);padding:32px;box-shadow:0 2px 12px rgba(0,0,0,.06);}
+    .mass-card h3{font-size:1.15rem;margin-bottom:14px;}
+    .mass-card p{font-size:.94rem;}
+    .mass-card ul{list-style:none;margin-top:14px;}
+    .mass-card ul li{padding:7px 0;padding-left:24px;position:relative;font-size:.92rem;color:var(--gray);border-bottom:1px solid var(--lightgray);}
+    .mass-card ul li:last-child{border-bottom:none;}
+    .mass-card ul li::before{content:'›';position:absolute;left:0;color:var(--gold);font-weight:700;}
+    .mass-advice{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:30px;}
+    .mass-advice-card{background:var(--navy);color:white;padding:30px;}
+    .mass-advice-card h3{color:var(--gold);font-size:1.05rem;margin-bottom:12px;}
+    .mass-advice-card p{color:#b8cce0;font-size:.92rem;line-height:1.75;}
+    .mass-advice-card p+p{margin-top:10px;}
+    .results-inner{max-width:1100px;margin:0 auto;}
+    .results-section .section-label{color:var(--gold);}
+    .results-section h2{color:white;}
+    .results-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;}
+    .result-card{background:rgba(255,255,255,.06);border-left:3px solid var(--gold);padding:24px;}
+    .result-amount{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--gold);font-weight:700;display:block;margin-bottom:6px;}
+    .result-desc{font-size:.88rem;color:#b8cce0;line-height:1.6;}
+
+    .faq-list{margin-top:36px;}
+    .faq-item{border-bottom:1px solid var(--lightgray);padding:22px 0;}
+    .faq-item h3{font-size:1.05rem;color:var(--navy);margin-bottom:10px;}
+    .faq-item p{font-size:.95rem;}
+
+    .cta-band{background:linear-gradient(135deg,var(--navy) 0%,#243a5e 100%);padding:70px 40px;text-align:center;}
+    .cta-band h2{color:white;margin-bottom:16px;}
+    .cta-band p{color:#b8cce0;max-width:580px;margin:0 auto 30px;}
+    .cta-band .btn-primary{font-size:1.1rem;padding:16px 40px;}
+
+    footer{background:#0d1920;color:#7a9ab8;padding:36px 40px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;align-items:center;font-size:.85rem;}
+    footer a{color:var(--gold);text-decoration:none;} footer a:hover{text-decoration:underline;}
+    .disclaimer{background:#0a1520;color:#4a6070;font-size:.75rem;padding:16px 40px;text-align:center;line-height:1.6;}
+
+    @media(max-width:768px){
+      .topbar{padding:8px 20px;} nav{padding:0 20px;} .nav-links{display:none;}
+      section,.theories-section,.products-section,.liable-section,.results-section,.mass-section,.cta-band{padding:50px 20px;}
+      .hero{padding:50px 20px;}
+      .theories-grid,.products-grid,.mass-compare,.mass-advice{grid-template-columns:1fr;}
+      .two-col{grid-template-columns:1fr;gap:30px;}
+      .results-grid{grid-template-columns:1fr 1fr;}
+      footer{grid-template-columns:1fr;text-align:center;}
+    }
+    @media(max-width:500px){.results-grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="topbar-firm">Member, <a href="https://www.centralmolaw.com" target="_blank">Gump, Faiella &amp; Bugalski, LLC</a> &nbsp;|&nbsp; Columbia &amp; Moberly, Missouri</span>
+  <span>
+    <a href="tel:18002643455">Toll Free: 1-800-264-3455</a> &nbsp;|&nbsp;
+    <a href="tel:16602633100">Moberly: (660) 263-3100</a> &nbsp;|&nbsp;
+    <a href="tel:15738182646">Columbia: (573) 818-2646</a>
+  </span>
+</div>
+
+<nav>
+  <a href="index.html" class="nav-brand">Chris <span>Faiella</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#practice">Practice Areas</a></li>
+    <li><a href="index.html#results">Results</a></li>
+    <li><a href="index.html#media">Publications</a></li>
+    <li><a href="index.html#news">News</a></li>
+    <li><a href="index.html#attorneys" class="nav-attorneys">Attorneys ▸</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Free Consultation</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div class="hero-breadcrumb"><a href="index.html">Home</a> &rsaquo; <a href="index.html#practice">Practice Areas</a> &rsaquo; Products Liability</div>
+    <h1>Missouri Products<br/><em>Liability Lawyer</em></h1>
+    <p class="hero-sub">When a defective product seriously injures or kills someone, the manufacturer, distributor, or seller may be strictly liable — regardless of how careful they claim to have been. Chris Faiella has the expertise and resources to take on major corporations and their insurers.</p>
+    <div class="hero-ctas">
+      <a href="index.html#contact" class="btn-primary">Free Case Evaluation</a>
+      <a href="tel:18002643455" class="btn-secondary">Call 1-800-264-3455</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>$300M+</strong><span>RECOVERED FOR CLIENTS</span></div>
+      <div class="hero-stat"><strong>30+</strong><span>YEARS EXPERIENCE</span></div>
+      <div class="hero-stat"><strong>No Fee</strong><span>UNLESS WE WIN</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section>
+  <div class="two-col">
+    <div>
+      <div class="section-label">What Is Products Liability</div>
+      <h2>When a Product Causes Serious Harm</h2>
+      <p>Products liability is the area of law that holds manufacturers, distributors, and sellers responsible for injuries caused by defective or unreasonably dangerous products. Unlike most personal injury claims — where you must prove someone was careless — products liability often allows recovery on a theory of strict liability: if the product was defective and caused your injury, the company may be liable regardless of how much care it exercised in making it.</p>
+      <p>These cases pit injured individuals against well-funded corporations with teams of defense lawyers and in-house engineers. Winning requires the right experts, deep understanding of both the law and the technology involved, and an attorney willing to take the case all the way to trial.</p>
+      <p>Chris Faiella handles serious products liability cases — those involving significant injury, clear evidence of a defect, and defendants who have the resources to make recovery meaningful.</p>
+    </div>
+    <div>
+      <div class="info-box">
+        <div class="section-label">Missouri Law</div>
+        <h3>Strict Liability in Missouri</h3>
+        <p>Missouri follows the Restatement (Second) of Torts § 402A, which imposes strict liability on sellers of products in a defective condition unreasonably dangerous to the user. This means a plaintiff does not need to prove the manufacturer was negligent — only that the product was defective, that the defect existed when it left the defendant's control, and that the defect caused the injury.</p>
+        <p style="margin-top:12px;">Missouri also recognizes negligence and breach of warranty as alternative theories of recovery, which can be pursued alongside strict liability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THREE THEORIES -->
+<div class="theories-section">
+  <div class="theories-inner">
+    <div class="section-label">Legal Theories of Recovery</div>
+    <h2>Three Ways a Product Can Be Defective</h2>
+    <p>Missouri law recognizes three distinct types of product defects, each of which can support a products liability claim. Many cases involve more than one theory.</p>
+    <div class="theories-grid">
+      <div class="theory-card">
+        <h3>Manufacturing Defect</h3>
+        <p>The product deviated from its intended design during the manufacturing process. Even if the design was safe, this particular unit was not made correctly — a faulty weld, a contaminated component, an assembly error. The product did not perform as the manufacturer intended.</p>
+      </div>
+      <div class="theory-card">
+        <h3>Design Defect</h3>
+        <p>The entire product line is unreasonably dangerous because of the way it was designed — even when manufactured perfectly. The design itself creates an unacceptable risk of harm that a reasonable alternative design could have avoided. These cases often involve entire product recalls.</p>
+      </div>
+      <div class="theory-card">
+        <h3>Failure to Warn</h3>
+        <p>The product carried risks that were not adequately disclosed to consumers through warnings or instructions. Even a properly designed and manufactured product can be defective if users are not adequately warned of risks that are not obvious — and those risks cause injury.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCT TYPES -->
+<div class="products-section">
+  <div class="products-inner">
+    <div class="section-label">Types of Products We Handle</div>
+    <h2>Defective Products That Cause Serious Injury</h2>
+    <p style="color:var(--gray);max-width:700px;">Products liability cases arise across a wide range of industries and product categories. Chris Faiella accepts cases involving serious injury caused by defective products of all kinds.</p>
+    <div class="products-grid">
+      <div class="product-card">
+        <h3>🚗 Defective Vehicles</h3>
+        <p>Defective brakes, airbags, tires, steering systems, seatbelts, and fuel systems. Vehicle defect cases often involve recalls and may be pursued alongside a negligence claim against an at-fault driver.</p>
+      </div>
+      <div class="product-card">
+        <h3>🏍️ Motorcycles &amp; ATVs</h3>
+        <p>Defective motorcycles, ATVs, and off-road vehicles — including stability failures, throttle defects, brake failures, and rollover propensity — can cause catastrophic injuries and death.</p>
+      </div>
+      <div class="product-card">
+        <h3>🏗️ Heavy Machinery &amp; Equipment</h3>
+        <p>Industrial equipment, construction machinery, forklifts, and farm equipment with defective safety guards, inadequate warnings, or design flaws that cause amputations, crush injuries, and fatalities.</p>
+      </div>
+      <div class="product-card">
+        <h3>💊 Pharmaceutical &amp; Medical Devices</h3>
+        <p>Dangerous drugs with undisclosed side effects, defective medical implants, and malfunctioning surgical devices. Chris Faiella has handled both individual pharmaceutical injury cases and participated in mass tort litigation involving drugs and medical devices that harmed large numbers of people.</p>
+      </div>
+      <div class="product-card">
+        <h3>🔥 Flammable &amp; Explosive Products</h3>
+        <p>Products that ignite, explode, or burn without adequate warning — including consumer goods, industrial chemicals, gas appliances, and fuel systems — can cause devastating burn injuries and wrongful death.</p>
+      </div>
+      <div class="product-card">
+        <h3>🏠 Consumer &amp; Household Products</h3>
+        <p>Defective power tools, appliances, children's products, sporting equipment, and recreational gear. When a product used as intended causes serious injury, strict liability may apply regardless of manufacturer precautions.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHO IS LIABLE / DAMAGES -->
+<section>
+  <div class="two-col">
+    <div>
+      <div class="section-label">Who May Be Held Responsible</div>
+      <h2>The Entire Supply Chain Can Be Liable</h2>
+      <p>One of the most powerful aspects of Missouri products liability law is that it extends liability throughout the distribution chain. Every commercial seller who placed the defective product into the stream of commerce — from manufacturer to wholesaler to retailer — may be strictly liable for the injuries it caused.</p>
+      <ul class="checklist" style="margin-top:20px;">
+        <li>Product manufacturer — the company that designed and made the product</li>
+        <li>Component part manufacturers — makers of defective parts incorporated into the product</li>
+        <li>Assembler or installer — those who put the product together or installed it</li>
+        <li>Wholesalers and distributors — companies in the distribution chain</li>
+        <li>Retailers — the store or seller that placed the product in consumers' hands</li>
+        <li>Importers — companies that brought a foreign-made product into the U.S. market</li>
+      </ul>
+    </div>
+    <div>
+      <div class="section-label">What You May Recover</div>
+      <h2>Damages in Products Liability Cases</h2>
+      <ul class="checklist" style="margin-top:20px;">
+        <li>All past and future medical expenses</li>
+        <li>Lost wages and future earning capacity</li>
+        <li>Pain and suffering — past and future</li>
+        <li>Permanent disability and disfigurement</li>
+        <li>Future care and assistance costs</li>
+        <li>Loss of enjoyment of life</li>
+        <li>Wrongful death damages for surviving family</li>
+        <li>Punitive damages in cases of knowing concealment of defects</li>
+      </ul>
+      <div style="background:var(--navy);color:white;padding:24px;margin-top:24px;">
+        <h3 style="color:var(--gold);font-size:1rem;margin-bottom:8px;">Preserve the Product</h3>
+        <p style="color:#b8cce0;font-size:.9rem;">If you were injured by a defective product, preserve it exactly as it is — do not repair, modify, or discard it. The product itself is critical evidence. Contact an attorney before doing anything with it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MASS TORT / CLASS ACTION -->
+<div class="mass-section">
+  <div class="mass-inner">
+    <div class="section-label">When Many People Are Harmed</div>
+    <h2>Mass Torts &amp; Class Actions in Products Liability</h2>
+    <p style="color:var(--gray);max-width:760px;">Most products liability cases involve a single injury caused by a single defective product — a machine that failed, a vehicle that crashed, a medical device that malfunctioned. Chris Faiella handles these individual cases every day. But sometimes a defective product or a dangerous drug harms not one person but thousands. When that happens, two distinct legal vehicles come into play: mass torts and class actions. They are not the same thing, and which path is right for you matters enormously.</p>
+
+    <div class="mass-compare">
+      <div class="mass-card">
+        <h3>⚖️ Mass Tort Litigation</h3>
+        <p>A mass tort is not a single lawsuit — it is a coordinated system for managing thousands of individual cases involving the same defective product or drug. Each plaintiff files their own lawsuit and recovers based on their own specific injuries and circumstances. The cases are often coordinated in federal court through a process called Multidistrict Litigation (MDL), where pretrial proceedings are consolidated before a single judge to reduce duplication — but each individual case remains separate.</p>
+        <ul>
+          <li>Every plaintiff has their own individual claim and their own lawyer</li>
+          <li>Compensation is based on each individual's specific injuries and damages</li>
+          <li>Cases may be remanded back to the plaintiff's home district for trial if not settled</li>
+          <li>Common in drug injury cases (e.g., dangerous pharmaceuticals) and defective medical device cases</li>
+          <li>Individual outcomes vary — a severely injured plaintiff recovers more than a mildly injured one</li>
+        </ul>
+      </div>
+      <div class="mass-card">
+        <h3>👥 Class Action Litigation</h3>
+        <p>A class action is a single lawsuit brought by one or more named plaintiffs on behalf of a defined class of people who suffered the same type of harm. If the class is certified and the case resolves, all class members share in the recovery — typically on a pro-rata basis. Class actions work best when the harm is similar across all plaintiffs and the individual claims are too small to litigate separately.</p>
+        <ul>
+          <li>One lawsuit, one outcome, shared by all class members</li>
+          <li>Recovery is often modest per individual — the value is in collective numbers</li>
+          <li>Class members typically have limited control over how the case is litigated</li>
+          <li>Federal class actions involving over $5 million are governed by the Class Action Fairness Act (CAFA), which often moves them to federal court</li>
+          <li>Missouri-only class actions may remain in state court and can be more favorable for Missouri plaintiffs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mass-advice">
+      <div class="mass-advice-card">
+        <h3>Mass Torts: Why a Missouri Lawyer Matters</h3>
+        <p>When a mass tort MDL is proceeding in federal court, you will see national advertising from law firms in other states soliciting clients. Those firms may have no presence in Missouri, may not be licensed here, and may have little connection to your community or your case.</p>
+        <p>This matters more than it might seem. While pretrial proceedings are centralized, cases that do not settle are typically remanded back to the district where the plaintiff filed — which for a Missouri plaintiff means a Missouri federal court. You want a lawyer who is licensed in Missouri, knows Missouri courts and juries, and will be there for your case if it goes to trial.</p>
+        <p>Chris Faiella is a Missouri attorney who has handled mass tort cases and has the relationships with national co-counsel to handle these cases properly — while keeping your case local where it matters.</p>
+      </div>
+      <div class="mass-advice-card">
+        <h3>Class Actions: Missouri vs. Federal Court</h3>
+        <p>Not every class action belongs in federal court. The Class Action Fairness Act (CAFA) grants federal courts jurisdiction over class actions where the amount in controversy exceeds $5 million and the class has more than 100 members with minimal diversity — meaning at least one plaintiff and one defendant are from different states. Many national class action defendants try to remove cases to federal court precisely because federal procedural rules can make class certification harder.</p>
+        <p>For claims that are truly Missouri-specific — injuries that occurred in Missouri, a defendant doing business primarily in Missouri, a class composed predominantly of Missouri citizens — keeping the case in Missouri state court may be strategically superior. Missouri's class action rules and courts can be more favorable for Missouri plaintiffs than federal MDL proceedings.</p>
+        <p>Whether to pursue an individual claim, join a mass tort, or participate in a class action is a strategic decision that deserves careful legal analysis of your specific situation.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RESULTS -->
+<div class="results-section">
+  <div class="results-inner">
+    <div class="section-label">Proven Track Record</div>
+    <h2 style="color:white;">Results in Products Liability &amp; Serious Injury Cases</h2>
+    <p style="color:#b8cce0;max-width:600px;">A sample of results Chris Faiella and the firm have obtained. Every case is different; past results do not guarantee future outcomes.</p>
+    <div class="results-grid">
+      <div class="result-card"><span class="result-amount">$6,200,000</span><span class="result-desc">Catastrophic injury — defective product/vehicle</span></div>
+      <div class="result-card"><span class="result-amount">$4,500,000</span><span class="result-desc">Severe injury — products liability</span></div>
+      <div class="result-card"><span class="result-amount">$3,100,000</span><span class="result-desc">Wrongful death — defective equipment</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section>
+  <div class="section-label">Common Questions</div>
+  <h2>Products Liability FAQ</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3>Do I have to prove the manufacturer was negligent?</h3>
+      <p>Not under strict liability. Missouri's strict liability doctrine means you do not have to prove the manufacturer failed to exercise reasonable care — only that the product was in a defective condition unreasonably dangerous to users, that the defect existed when it left the defendant's control, and that the defect caused your injury. Negligence is an alternative theory that may also be pursued, but it is not required.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What if the product was recalled?</h3>
+      <p>A product recall is strong evidence that the manufacturer knew or should have known about a defect. If you were injured by a recalled product — even if you were not notified of the recall — you may have a strong products liability claim. If you were injured before the recall was announced, the recall itself may show the defect existed at the time of your injury.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What if I was using the product in an unusual way?</h3>
+      <p>Missouri law requires manufacturers to design and warn for foreseeable uses — including some foreseeable misuses. If the way you used the product was something the manufacturer could reasonably have anticipated, that use may still support a products liability claim. This is a fact-specific question worth discussing in a free consultation.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How long do I have to file a products liability claim in Missouri?</h3>
+      <p>Missouri's statute of limitations for products liability claims is generally five years from the date of injury. There is also a statute of repose that can bar claims after a certain number of years from the date the product was first sold, regardless of when the injury occurred. Because these deadlines can be complex and product-specific, consulting an attorney promptly is important.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Injured by a Defective Product in Missouri?</h2>
+  <p>Preserve the product, document your injuries, and call as soon as possible. The consultation is free and there is no fee unless we win.</p>
+  <a href="index.html#contact" class="btn-primary">Get Your Free Consultation</a>
+  <div style="margin-top:20px;color:#7a9ab8;font-size:.9rem;">Or call anytime: <a href="tel:18002643455" style="color:var(--gold);">1-800-264-3455</a></div>
+</div>
+
+<footer>
+  <div><strong style="color:white;font-family:'Playfair Display',serif;font-size:1.1rem;">Chris Faiella</strong><br/>Member, Gump, Faiella &amp; Bugalski, LLC &nbsp;|&nbsp; <a href="https://www.centralmolaw.com">centralmolaw.com</a></div>
+  <div style="text-align:center;"><a href="tel:18002643455">1-800-264-3455</a> &nbsp;|&nbsp; <a href="index.html#contact">Free Consultation</a> &nbsp;|&nbsp; <a href="index.html#practice">Practice Areas</a> &nbsp;|&nbsp; <a href="index.html#results">Results</a></div>
+  <div style="text-align:right;">Columbia &amp; Moberly, Missouri<br/>© 2026 Chris Faiella. All Rights Reserved.</div>
+</footer>
+<div class="disclaimer">The information on this website is for general informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by visiting this site. Past results do not guarantee future outcomes. Chris Faiella is a Missouri-licensed attorney. Super Lawyers® and AV Preeminent® are registered trademarks of their respective organizations.</div>
+</body>
+</html>
