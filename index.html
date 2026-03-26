@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chris Faiella | Missouri Personal Injury Attorney | faiellalaw.com</title>
-  <meta name="description" content="Chris Faiella is a Missouri personal injury attorney with over $300 million recovered for injured clients. Car accidents, truck accidents, brain injury, wrongful death, insurance bad faith. Offices in Columbia and Moberly, MO."/>
-  <meta name="keywords" content="Chris Faiella attorney, Missouri personal injury lawyer, car accident attorney Columbia MO, truck accident lawyer Missouri, brain injury attorney, wrongful death lawyer Missouri, insurance bad faith attorney, faiellalaw.com"/>
+  <title>Chris Faiella | Missouri Personal Injury Attorney</title>
+  <meta name="description" content="Chris Faiella is a Missouri personal injury attorney with over $300 million recovered for injured clients. Car accidents, truck accidents, brain injury, wrongful death, insurance bad faith. Office in Moberly, MO."/>
+  <meta name="keywords" content="Chris Faiella attorney, Missouri personal injury lawyer, car accident attorney Moberly MO, truck accident lawyer Missouri, brain injury attorney, wrongful death lawyer Missouri, insurance bad faith attorney"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet"/>
 
@@ -647,11 +647,50 @@
       .atty-grid { grid-template-columns: 1fr; }
       .practice-intro-grid { grid-template-columns: 1fr; gap: 32px; }
     }
+    /* ── HAMBURGER MENU ── */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      z-index: 200;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--navy);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+    .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
     @media (max-width: 680px) {
       section { padding: 48px 20px; }
       .topbar { padding: 8px 20px; }
-      nav { padding: 0 20px; }
-      .nav-links { display: none; }
+      nav { padding: 0 20px; position: relative; }
+      .nav-toggle { display: flex; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        border-top: 3px solid var(--gold);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        z-index: 150;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 14px 20px; border-bottom: 1px solid #f0f0f0; font-size: 0.95rem; }
+      .nav-cta { margin: 12px 20px; border-radius: 3px; text-align: center; }
       .trust-bar { padding: 20px; }
       .who-grid, .results-grid, .media-grid, .news-grid, .atty-grid { grid-template-columns: 1fr; }
       .practice-areas-grid { grid-template-columns: 1fr 1fr; }
@@ -668,18 +707,19 @@
 <div class="topbar">
   <span class="topbar-firm">Member, <a href="https://www.centralmolaw.com" target="_blank">Gump, Faiella &amp; Bugalski, LLC</a> &nbsp;|&nbsp; Columbia &amp; Moberly, Missouri</span>
   <span>
-    <a href="tel:18002643455">Toll Free: 1-800-264-3455</a>
+    <a href="tel:15551117777">Call: (555) 111-7777</a>
     &nbsp;|&nbsp;
-    <a href="tel:16606633100">Moberly: (660) 263-3100</a>
-    &nbsp;|&nbsp;
-    <a href="tel:15738182646">Columbia: (573) 818-2646</a>
+    110 North Fifth Street, Moberly, MO 65270
   </span>
 </div>
 
 <!-- NAV -->
 <nav>
   <a href="#top" class="nav-brand">Chris <span>Faiella</span></a>
-  <ul class="nav-links">
+  <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
     <li><a href="#about">About</a></li>
     <li><a href="#practice">Practice Areas</a></li>
     <li><a href="#results">Results</a></li>
@@ -693,9 +733,9 @@
 <!-- HERO -->
 <section class="hero" id="top" style="padding:0;">
   <div class="hero-text">
-    <div class="hero-eyebrow">Missouri Personal Injury Attorney</div>
-    <h1>When the Stakes Are High,<em>Results Matter.</em></h1>
-    <p class="hero-sub">For over 30 years, Chris Faiella has fought for the seriously injured — taking on large corporations, negligent trucking companies, and insurance giants that wrongfully deny claims. Over $300 million recovered for clients throughout Missouri.</p>
+    <div class="hero-eyebrow">Missouri Personal Injury Attorney — Moberly &amp; Columbia</div>
+    <h1>Seriously Injured in Missouri?<em>You Deserve More Than a Quick Settlement.</em></h1>
+    <p class="hero-sub">For over 30 years, Chris Faiella has fought for people who've been seriously hurt — standing up to large corporations, trucking companies, and insurance carriers that put profits ahead of people. Over $300 million recovered for clients across Missouri.</p>
     <div class="hero-stats">
       <div class="hero-stat">
         <div class="num">$300M+</div>
@@ -716,12 +756,7 @@
     </div>
   </div>
   <div class="hero-photo">
-    <!-- Replace src with actual photo URL from firm site or uploaded photo -->
-    <!-- <img src="[PHOTO_URL]" alt="Chris Faiella, Missouri Personal Injury Attorney"/> -->
-    <div class="hero-photo-placeholder">
-      <svg width="80" height="80" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v2h20v-2c0-3.3-6.7-5-10-5z"/></svg>
-      <p>[ Insert attorney photo here ]<br/><small>Use photo from centralmolaw.com/team/chris-faiella/</small></p>
-    </div>
+    <img src="Chris-Faiella.png" alt="Chris Faiella, Missouri Personal Injury Attorney"/>
   </div>
 </section>
 
@@ -892,9 +927,7 @@
 <section class="about-section" id="about">
   <div class="about-grid">
     <div class="about-photo-box">
-      <!-- Replace with actual photo -->
-      <!-- <img src="[PHOTO_URL]" alt="Chris Faiella"/> -->
-      <div class="about-photo-placeholder">[ Attorney photo — use image from centralmolaw.com/team/chris-faiella/ ]</div>
+      <img src="Chris-Faiella.png" alt="Chris Faiella, Missouri Personal Injury Attorney"/>
       <div class="credentials">
         <div class="cred"><div class="cred-dot"></div>AV Preeminent® — Martindale-Hubbell</div>
         <div class="cred"><div class="cred-dot"></div>Super Lawyers® — Missouri</div>
@@ -942,7 +975,7 @@
       <p>General practice attorneys refer their most serious injury cases — tractor-trailer accidents, wrongful death, catastrophic car accidents, pedestrian cases, medical malpractice, drownings, boating accidents, and slip-and-fall cases with significant damages.</p>
       <p>In every referred case, I work diligently to achieve the best possible result for the client — and to honor the trust the referring attorney has placed in me. Referral fee arrangements where permitted under Missouri ethics rules are handled professionally and promptly.</p>
       <p>If you have a case you would like to discuss, call me directly or submit the contact form. Initial referral consultations are always confidential.</p>
-      <a href="tel:18002643455" class="btn-primary" style="margin-top:8px;">Call 1-800-264-3455</a>
+      <a href="tel:15551117777" class="btn-primary" style="margin-top:8px;">Call (555) 111-7777</a>
     </div>
   </div>
 </section>
@@ -1066,7 +1099,7 @@
       <p>All referral inquiries are confidential. I am happy to discuss the case, give you my initial assessment, and explain how a referral arrangement would work — including fee division where permitted under Missouri Rule 4-1.5(e). I handle referred cases with the same preparation and commitment I bring to every case. Your client will be treated as my own, and you will be kept informed throughout.</p>
       <p>The fastest way to reach me is by phone. For a written inquiry, use the form below and select "Attorney Referral" as the case type — your submission goes directly to me, not a general inbox.</p>
       <div class="atty-contact-row">
-        <a href="tel:18002643455" class="btn-primary">Call 1-800-264-3455</a>
+        <a href="tel:15551117777" class="btn-primary">Call (555) 111-7777</a>
         <a href="#contact" class="btn-secondary" style="border-color:rgba(200,169,81,0.5);color:var(--gold);">Submit a Referral Inquiry</a>
       </div>
       <p style="margin-top:20px;font-size:0.8rem;color:#445566;">Missouri Rule 4-1.5(e) governs fee division with referring attorneys. All arrangements are documented in writing in advance.</p>
@@ -1085,7 +1118,7 @@
         <div class="cd-item">
           <div>
             <div class="cd-label">Toll Free</div>
-            <div class="cd-value"><a href="tel:18002643455">1-800-264-3455</a></div>
+            <div class="cd-value"><a href="tel:15551117777">(555) 111-7777</a></div>
           </div>
         </div>
         <div class="cd-item">
@@ -1097,13 +1130,13 @@
         <div class="cd-item">
           <div>
             <div class="cd-label">Moberly Office</div>
-            <div class="cd-value">110 North Fifth Street<br/>Moberly, MO 65270<br/><a href="tel:16606633100">(660) 263-3100</a></div>
+            <div class="cd-value">110 North Fifth Street<br/>Moberly, MO 65270<br/><a href="tel:15551117777">(555) 111-7777</a></div>
           </div>
         </div>
         <div class="cd-item">
           <div>
             <div class="cd-label">Columbia Office</div>
-            <div class="cd-value">1000 W. Nifong Blvd., Bldg. 2, Suite 220B<br/>Columbia, MO 65203<br/><a href="tel:15738182646">(573) 818-2646</a></div>
+            <div class="cd-value">1000 W. Nifong Blvd., Bldg. 2, Suite 220B<br/>Columbia, MO 65203<br/><a href="tel:15551117777">(555) 111-7777</a></div>
           </div>
         </div>
       </div>
@@ -1170,7 +1203,7 @@
     Member, Gump, Faiella &amp; Bugalski, LLC &nbsp;|&nbsp; <a href="https://www.centralmolaw.com">centralmolaw.com</a>
   </div>
   <div style="text-align:center;">
-    <a href="tel:18002643455">1-800-264-3455</a> &nbsp;|&nbsp;
+    <a href="tel:15551117777">(555) 111-7777</a> &nbsp;|&nbsp;
     <a href="#contact">Free Consultation</a> &nbsp;|&nbsp;
     <a href="#practice">Practice Areas</a> &nbsp;|&nbsp;
     <a href="#results">Results</a>
@@ -1181,4 +1214,19 @@
   </div>
 </footer>
 <div class="footer-disclaimer">
-  The choice of a lawyer is an important decision and should not be based solely upon advertisements. Past results do not guarantee similar outcomes in future cases. The information on this website is for general informational purposes only and does not constitute legal advice. Visiting this site does not create an attorney-client relationship. Chris Faiella practices as a member of Gump, Faiella &amp; Bugalski, LLC, licensed in Missouri and before the U.S. Suprem
+  The choice of a lawyer is an important decision and should not be based solely upon advertisements. Past results do not guarantee similar outcomes in future cases. The information on this website is for general informational purposes only and does not constitute legal advice. Visiting this site does not create an attorney-client relationship. Chris Faiella practices as a member of Gump, Faiella &amp; Bugalski, LLC, licensed in Missouri and before the U.S. Supreme Court.
+</div>
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', function() {
+    toggle.classList.toggle('open');
+    links.classList.toggle('open');
+  });
+  links.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      toggle.classList.remove('open');
+      links.classList.remove('open');
+    });
+  });
+</script>
